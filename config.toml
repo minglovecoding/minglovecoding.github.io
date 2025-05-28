@@ -1,0 +1,45 @@
+# config.toml 示例
+title = "Mingo"
+base_url = "https://minglovecoding.github.io"
+
+compile_sass = true
+ignored_content = ["README.md"]
+build_search_index = true
+default_language = "en"
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-light"
+
+[extra]
+katex_enable = true
+
+[[taxonomies]]
+name = "tags"
+slug = "tags"
+
+[[taxonomies]]
+name = "categories"
+slug = "categories"
+
+[extra.social]
+github = "King-Key"
+twitter = "WangGuo113"
+
+[extra.show]
+links = true
+tags = true
+
+[languages.en]
+generate_feeds = true
+description = "Mingzhao zhou"
+
+[languages.en.translations]
+about = "About"
+home = "Home"
+tags = "Tags"
+archive = "Archive"
+links = "Links"
+date_format = "%Y-%m-%d"
+next_page = "Next Page"
+last_page = "Last Page"
