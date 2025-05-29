@@ -23,8 +23,8 @@ name = "categories"
 slug = "categories"
 
 [extra.social]
-github = "King-Key"
-twitter = "WangGuo113"
+github = "minglovecoding"
+twitter = "minglovecoding"
 
 [extra.show]
 links = true
