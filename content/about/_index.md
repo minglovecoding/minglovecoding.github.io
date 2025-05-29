@@ -9,8 +9,8 @@ paginate_by: 0
   document.addEventListener("DOMContentLoaded", function () {
     new Typed("#typed-text", {
       strings: [
-        "天下谁人不识君",
-        "竹杖芒鞋轻胜马，一蓑烟雨任平生！！"
+        "悟已往之不谏 知来者之可追",
+        "我命由我不由天！！"
       ], // 每一段文字
       typeSpeed: 50, // 打字速度
       backSpeed: 30, // 删除速度
