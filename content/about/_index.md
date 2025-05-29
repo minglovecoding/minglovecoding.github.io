@@ -10,7 +10,7 @@ paginate_by: 0
     new Typed("#typed-text", {
       strings: [
         "悟已往之不谏 知来者之可追",
-        "正在逆流而上~"
+        "真正的强者，敢于逆流而上！！！"
       ], // 每一段文字
       typeSpeed: 50, // 打字速度
       backSpeed: 30, // 删除速度
@@ -38,6 +38,10 @@ paginate_by: 0
 ## 教育经历
 - 2020.09 - 2023.07：🦍深圳大学   硕士    计算机技术
 - 2016.09 - 2020.6：🔥齐鲁工业大学  本科  林产化工
+
+## 学术成果
+- [FAITH: A Fast Blockchain-Assisted Edge Computing Platform for Healthcare Applications](https://ieeexplore.ieee.org/abstract/document/9756310)
+- 用于调度任务的方法及装置[CN114864069A](https://patentimages.storage.googleapis.com/17/5e/af/53d393c5c2c413/CN114864069A.pdf)
 
 ## 工作经历
 - 2013.07 - 2023.12：🚗 BYD  技术项目管理
