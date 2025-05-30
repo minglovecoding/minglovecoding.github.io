@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Shenzhen-Paris</name>
+	<visibility>0</visibility>
+	<Schema name="__managed_schema" id="__managed_schema">
+		<SimpleField type="int" name="0FFEF77D41321734DB60">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="07B39732E9321438BA83">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0340187A4E320CB8F3F6">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0F02386429320766CAA0">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0241BF46E431FCFED50E">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0224CD9D4A31FA62AC71">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="000DFAEF3331E8B11624">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0BBEB5BE3B31DDE80C17">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="07F628856C31D3FBBD32">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="02FA5AA87231D1FC4045">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="01645BA60231C6D0697C">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0EBC4E57F831C4148E08">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="09D0BFA51331C17887EF">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0028EEE73631C1724C15">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="016B0A729A31ACD3E449">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0446A575F2319D22E7EF">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0E2F713AB43198544BE0">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="06484A418A3181209B44">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="038D07D3E33165036089">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="05650C7CDF31581148A3">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0E4924F5ED314DF284CA">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0A6B7A20E230E8D7CF11">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0F3D0CFDB030D4E9EBEE">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="00BA68679F30CCB52843">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="043137707030C71BA36E">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0B95CF7DD630B2ECB835">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="05F2B51095309B030AE2">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="04F3DBE606307EF598CB">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="09087FD63E306E64BEB8">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0059306684306573D2C0">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0331A06FB1305D90F0E7">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0A72B0EEC43052DD09F1">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0803586B3B3041260563">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0C980CE086303E076646">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="001E6CB4EB3021B9FB64">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="03C3139F9D3016314F0D">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0A1565FCEB30141B8167">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0FE0A66431300DBC050A">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="06A00E192F300AB1F315">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="007433E20F2FDF0AEF24">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="055D3FDC1E2FD964A7F6">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0E3337415F2FD473882B">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0B511C0EC42FCE83BB84">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0AE629B56E2FC497164E">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0B22DC60512FBF07345D">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="060050E5772FBA31611C">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="06241250FF2FB535F861">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="02C4946D612FB08660AB">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="013F040E912FA0A42FDA">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="00B894F45F2F9BBF0C66">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0F118305A62F990AFED7">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0D15A144782F918E18E8">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0BB11DDD222F8BB73594">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0CE090E5692F86EB6BCD">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0EA698ACCC2F8280EC45">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0E09551E242F7B957763">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="00FF5371672F71DB22B6">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="025F9788542F6CF11576">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="07C55D29302F677D8EAD">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="02F305978A2F629B146C">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="085B8501E62F5122B83E">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0A80F04A8C2F49553DC8">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="01D295B0DB2F43960475">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0E88C6BB842F419541E0">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="09A87A941C2F395EE26B">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="00AE3F1CF02F349965FB">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="03F98D5A4C2F3497ACAC">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="044DFC67292F2F16A5D8">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0C9FD6EF802F2CA327C5">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="042519B7702F252485B0">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="046666256B2F2523296E">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="07A0D60D352F200BF543">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="047710C49D2F1C40DED4">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+		<SimpleField type="int" name="0C4D0F76082F1C2EC92D">
+			<displayName>Accuracy (m)</displayName>
+		</SimpleField>
+	</Schema>
+	<gx:CascadingStyle kml:id="__managed_style_51E10774FC3857008F4A">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffa726&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2.4389</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_40546D932F3857008F4A">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffa726&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.62594</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_3AD3AAD1C23857008F4A">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_40546D932F3857008F4A</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_51E10774FC3857008F4A</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_22B646C91A3857008F4A">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2.4389</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1A91A3F90A3857008F4A">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.62594</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_8CA4D812803857008F49">
+		<Style>
+			<IconStyle>
+				<scale>1.8</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2.4389</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_472EC684783857008F49">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffee58&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.62594</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_7C7721A3033857008F49">
+		<Style>
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.62594</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0DFFECFCF83857008F4A">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1A91A3F90A3857008F4A</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_22B646C91A3857008F4A</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_3AD0D273C93857008F49">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_472EC684783857008F49</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_5F0B87CEFF3857008F49</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_19970E75603857008F49">
+		<Style>
+			<IconStyle>
+				<scale>2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=d32f2f&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>1.62594</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_5F0B87CEFF3857008F49">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=ffee58&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2.4389</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_24ED70A31F3857008F49">
+		<Style>
+			<IconStyle>
+				<scale>2.4</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=d32f2f&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2.4389</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_6B21249DD13857008F49">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_7C7721A3033857008F49</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_8CA4D812803857008F49</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_06C6A8FDEB3857008F49">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_19970E75603857008F49</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_24ED70A31F3857008F49</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0CE7B55F952F0B9C8EC2">
+		<name>Paris</name>
+		<gx:mid>/m/05qtj</gx:mid>
+		<gx:fid>0x47e66e1f06e2b70f:0x40b82c3688c9460</gx:fid>
+		<LookAt>
+			<longitude>2.347035</longitude>
+			<latitude>48.85885484999999</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>66329.60112931964</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_06C6A8FDEB3857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>2.3522219,48.85661400000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0EFADC45F02F1C2EC92A">
+		<name>Day4 chenzhou</name>
+		<LookAt>
+			<longitude>113.1331244755471</longitude>
+			<latitude>25.64805981496328</latitude>
+			<altitude>573.8239730007648</altitude>
+			<heading>359.9741508094274</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>529610.9667335452</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#__managed_schema">
+				<SimpleData name="0C4D0F76082F1C2EC92D">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>113.0065682253766,25.78730651808384,189.1346320238474</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0342F3459F2F1C382A60">
+		<name>day1 guangzhou</name>
+		<gx:mid>/g/1tgfmpwf</gx:mid>
+		<gx:fid>0x34033adaf2746bd9:0xbc308a6f35ed995d</gx:fid>
+		<LookAt>
+			<longitude>113.586505</longitude>
+			<latitude>23.550621</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2348.886276668172</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>113.586505,23.550621,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="034C19A7FF2F1C3C85E3">
+		<name>day2 shaoguan</name>
+		<gx:mid>/g/1vzv1b0s</gx:mid>
+		<gx:fid>0x341c5a2055dc54cd:0x2abe22c714e9fd39</gx:fid>
+		<LookAt>
+			<longitude>113.59942</longitude>
+			<latitude>24.570473</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2326.361287279004</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>113.5992810178533,24.57049899190514,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02BCDF296C2F1C40DED0">
+		<name>Start</name>
+		<LookAt>
+			<longitude>114.3383278847868</longitude>
+			<latitude>22.67697613798629</latitude>
+			<altitude>46.14725027701959</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2757.817254253314</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_6B21249DD13857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#__managed_schema">
+				<SimpleData name="047710C49D2F1C40DED4">0</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>114.3348228079858,22.67810054907353,48.05283376836716</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C56E0DE282F1C485D0E">
+		<name>Day3 yizhang</name>
+		<gx:mid>/g/1xb2b5zw</gx:mid>
+		<gx:fid>0x341e0c78f085b6dd:0x86c6788696837650</gx:fid>
+		<LookAt>
+			<longitude>112.9450764</longitude>
+			<latitude>25.3930546</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2307.589477720205</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>112.9450764,25.3930546,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D727C08F02F200BF53F">
+		<name>day5 hengyang</name>
+		<LookAt>
+			<longitude>112.5439940824728</longitude>
+			<latitude>26.90127140955143</latitude>
+			<altitude>66.9887438457889</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1392.732210936811</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="07A0D60D352F200BF543">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>112.5447807143473,26.90244632435031,67.15534387120081</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D460D113E2F252485AC">
+		<name>day6 hengshan</name>
+		<LookAt>
+			<longitude>112.5195173114383</longitude>
+			<latitude>27.37606164474191</latitude>
+			<altitude>94.15104877264201</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>9161.519097205019</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="042519B7702F252485B0">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>112.5250917121224,27.37795103545066,87.75626200937975</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="065D8BDA6C2F2CA327BA">
+		<name>day7 changsha</name>
+		<LookAt>
+			<longitude>113.057980602027</longitude>
+			<latitude>28.2497241528775</latitude>
+			<altitude>68.05651402592729</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0C9FD6EF802F2CA327C5">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>113.0579806020269,28.2497241528775,68.05651402592729</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B7B79BDA22F2F16A5D5">
+		<name>day8 yueyang</name>
+		<LookAt>
+			<longitude>113.0937576521725</longitude>
+			<latitude>29.376369624107</latitude>
+			<altitude>42.27259723257851</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>512.5171690236311</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="044DFC67292F2F16A5D8">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>113.0937771817858,29.37644454596471,42.71619205617595</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="033B88688E2F349DC245">
+		<name>day9 qianjiang</name>
+		<LookAt>
+			<longitude>112.8517569873591</longitude>
+			<latitude>30.19330734142326</latitude>
+			<altitude>-97.74009393883286</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>94022.54524133733</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>112.8517569873591,30.19330734142326,-97.74009393883286</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A5E9D85262F395EE269">
+		<name>day10 zhongxiang</name>
+		<LookAt>
+			<longitude>112.243014461563</longitude>
+			<latitude>31.72215059401632</latitude>
+			<altitude>-395.0031631394401</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1139766.685650051</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="09A87A941C2F395EE26B">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>112.3153800597339,31.43773476553546,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DF6A45F762F419541DC">
+		<name>day11 dengzhou</name>
+		<LookAt>
+			<longitude>112.0687749073167</longitude>
+			<latitude>32.67901963789107</latitude>
+			<altitude>112.0143846229897</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0E88C6BB842F419541E0">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>112.0687749073167,32.67901963789107,112.2336292140453</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B705AD2EC2F43960470">
+		<name>day12 xixia</name>
+		<LookAt>
+			<longitude>107.757778029817</longitude>
+			<latitude>35.92926931194945</latitude>
+			<altitude>402.0153549465226</altitude>
+			<heading>293.8982153440191</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>9311972.6808393</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="01D295B0DB2F43960475">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>111.4857969901268,33.29707370193809,222.2324552948497</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0273C03DB12F49553DC2">
+		<name>day13 shangluo</name>
+		<LookAt>
+			<longitude>109.2646839799995</longitude>
+			<latitude>34.39387110864455</latitude>
+			<altitude>431.1410072840402</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>620597.2415200621</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0A80F04A8C2F49553DC8">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>110.1861794944046,33.73271335244161,626.9641366292531</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C03FD270D2F5122B83A">
+		<name>day14-17 xian</name>
+		<LookAt>
+			<longitude>107.1372887867347</longitude>
+			<latitude>34.22470548555356</latitude>
+			<altitude>1977.015139288044</altitude>
+			<heading>358.7370176504449</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>3866549.871593715</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="085B8501E62F5122B83E">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>108.9236111506708,34.30301941108908,393.2590324675263</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0044601F022F629B1466">
+		<name>day18 tingkou</name>
+		<LookAt>
+			<longitude>107.593301183803</longitude>
+			<latitude>33.81860613829892</latitude>
+			<altitude>2091.335415538271</altitude>
+			<heading>359.9379388808507</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>3128432.087727785</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="02F305978A2F629B146C">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>107.9342418292223,35.10451519794628,855.4707561820871</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="000C6D9D562F677D8EA6">
+		<name>day19 pingliang</name>
+		<LookAt>
+			<longitude>106.6541954172116</longitude>
+			<latitude>35.48171466563458</latitude>
+			<altitude>1588.013119998712</altitude>
+			<heading>359.8002095231618</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>648821.1701647192</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="07C55D29302F677D8EAD">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>106.642140487337,35.55199302861268,1383.327355678076</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0ABF300B3B2F6CF11570">
+		<name>day20 haiyuan</name>
+		<LookAt>
+			<longitude>105.8526715436379</longitude>
+			<latitude>36.52010154940932</latitude>
+			<altitude>1845.559478657908</altitude>
+			<heading>0.001195796783246089</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>34380.84838908166</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="025F9788542F6CF11576">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>105.8551938516453,36.50406805204112,1793.635472925585</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="046FE7D1232F71DB22AF">
+		<name>day21 baiyin</name>
+		<LookAt>
+			<longitude>104.8961201791941</longitude>
+			<latitude>36.82721885269912</latitude>
+			<altitude>1756.564600573861</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1006793.643002808</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="00FF5371672F71DB22B6">68</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>104.8265107917318,36.7252990146725,1540.80143245601</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00A0C3554E2F7B95775D">
+		<name>day22 jingtai</name>
+		<LookAt>
+			<longitude>104.0732891869711</longitude>
+			<latitude>37.19247595766054</latitude>
+			<altitude>1623.116265931021</altitude>
+			<heading>-0.3108345539266261</heading>
+			<tilt>3.089332848213866</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>107.7093984343628</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0E09551E242F7B957763">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>104.0731198659447,37.19308197944495,1622.983962014691</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="065AD3445A2F8280EC3F">
+		<name>day24 wuwei</name>
+		<LookAt>
+			<longitude>102.8228540805997</longitude>
+			<latitude>38.01516326746486</latitude>
+			<altitude>1545.358223582507</altitude>
+			<heading>14.5686570078858</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>497953.745116666</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0EA698ACCC2F8280EC45">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>102.6302165369268,37.90808001743334,1569.253156900723</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="019E86AAEC2F86EB6BC6">
+		<name>day25 yonchang</name>
+		<LookAt>
+			<longitude>101.9647049525451</longitude>
+			<latitude>38.25403722590077</latitude>
+			<altitude>1954.951576955267</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>14484.46431567427</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0CE090E5692F86EB6BCD">59</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>101.9637824453913,38.25005216873259,1964.030254416998</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DAEB1D6962F8BB7358D">
+		<name>day26 shandan</name>
+		<LookAt>
+			<longitude>101.1343080322471</longitude>
+			<latitude>38.6903871491577</latitude>
+			<altitude>1954.186344563821</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>207742.847856693</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0BB11DDD222F8BB73594">58</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>101.0981576256993,38.78402383085539,1778.391343346326</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F827DC64B2F918E18E2">
+		<name>day27 linze</name>
+		<LookAt>
+			<longitude>100.1449469989934</longitude>
+			<latitude>39.29502143590904</latitude>
+			<altitude>1407.297651912669</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>269802.2682152689</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0D15A144782F918E18E8">41</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>100.1569387818432,39.15306675018751,1453.864873331432</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01E7A3978E2F990AFED4">
+		<name>day28 jiuquan</name>
+		<LookAt>
+			<longitude>98.45774602968396</longitude>
+			<latitude>39.84611562733097</latitude>
+			<altitude>1705.762878967373</altitude>
+			<heading>356.4936782096827</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>477585.1550967246</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0F118305A62F990AFED7">46</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>98.55758074935846,39.74098666807257,1482.21787020428</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0694DD7F412F9BBF0C60">
+		<name>day29 yumen</name>
+		<LookAt>
+			<longitude>95.47212887452689</longitude>
+			<latitude>40.15531620162557</latitude>
+			<altitude>1314.690381681196</altitude>
+			<heading>359.9999875046318</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2102399.586524069</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="00B894F45F2F9BBF0C66">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>97.03342248107592,39.7535162197054,1499.896858375244</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="084F5B40722FA0A42FD4">
+		<name>day30 guazhou</name>
+		<LookAt>
+			<longitude>95.63249182084665</longitude>
+			<latitude>38.60387410758338</latitude>
+			<altitude>6281.099150365065</altitude>
+			<heading>-2.252599645750035</heading>
+			<tilt>12.73707884121002</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>4449400.352185965</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="013F040E912FA0A42FDA">20</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>95.77667298728947,40.52054075068819,1178.012461173664</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04B87B64022FAD7A9FDF">
+		<name>day32 xingxingxia</name>
+		<gx:mid>/g/1pv0k6l8</gx:mid>
+		<gx:fid>0x37c27e0fc7f7c2a7:0xc79a5e8a1fdb2c1c</gx:fid>
+		<LookAt>
+			<longitude>95.13416100000001</longitude>
+			<latitude>41.79342945</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>9395.610258589662</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>95.13416099999999,41.79343,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F307D29012FAD7D94B6">
+		<name>Hami</name>
+		<LookAt>
+			<longitude>93.50857184442282</longitude>
+			<latitude>42.90618352753417</latitude>
+			<altitude>926.8350694263843</altitude>
+			<heading>-1.289737139517446e-06</heading>
+			<tilt>0.8967080092918804</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>323323.8352869451</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>93.48395086462172,42.85229893516536,926.8350694263843</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07823810C42FB08660A4">
+		<name>day33 sandaoling</name>
+		<LookAt>
+			<longitude>92.55915507904146</longitude>
+			<latitude>43.04022788054327</latitude>
+			<altitude>829.0103313484276</altitude>
+			<heading>359.9998720307187</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>272503.9411653578</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="02C4946D612FB08660AB">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>92.67525701314894,43.14973808603352,1078.887052652791</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="089B4785002FB535F85B">
+		<name>day34 shanshan</name>
+		<LookAt>
+			<longitude>90.22027379632566</longitude>
+			<latitude>42.84701175697146</latitude>
+			<altitude>254.6427334769322</altitude>
+			<heading>216.5728490179408</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>150627.8435806744</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="06241250FF2FB535F861">20</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>90.22396811882986,42.88902370177447,404.7425555499083</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F8680DD2F2FBA316115">
+		<name>day35 tulufan</name>
+		<LookAt>
+			<longitude>89.25092679805346</longitude>
+			<latitude>42.69210649825141</latitude>
+			<altitude>-409.5130093301273</altitude>
+			<heading>0.6396787614169783</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1627397.482536436</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="060050E5772FBA31611C">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>89.12954236576067,42.9936821126627,112.3901440837065</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06E4B858272FBF073459">
+		<name>day36 dabancheng</name>
+		<LookAt>
+			<longitude>88.28792878804632</longitude>
+			<latitude>43.37153638426487</latitude>
+			<altitude>1109.605257491784</altitude>
+			<heading>359.5267318318611</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>40608.34967160132</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0B22DC60512FBF07345D">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>88.30309208327188,43.35581414229132,1101.906389433926</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F46D4A7C12FC4971648">
+		<name>day37 urumqi</name>
+		<LookAt>
+			<longitude>87.6764252746967</longitude>
+			<latitude>44.17368647402549</latitude>
+			<altitude>358.2304940604718</altitude>
+			<heading>358.9629362412867</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1308952.854546905</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0AE629B56E2FC497164E">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>87.49878896006328,43.8802741157645,694.4427628361407</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00D8A348F92FCE83BB7E">
+		<name>day39 shihezi</name>
+		<LookAt>
+			<longitude>108.3195897192202</longitude>
+			<latitude>43.94403173089854</latitude>
+			<altitude>1275.417835755121</altitude>
+			<heading>26.2560586100361</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>26875450.36611557</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0B511C0EC42FCE83BB84">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>86.04764952818292,44.31305887893301,458.6195688084813</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0AED3B79FE2FD4738825">
+		<name>day40 usu</name>
+		<LookAt>
+			<longitude>84.67628846010271</longitude>
+			<latitude>44.43120205073154</latitude>
+			<altitude>474.0170472657982</altitude>
+			<heading>0.3047820529288501</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1152.837475124979</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0E3337415F2FD473882B">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>84.67582763273121,44.43203762445673,469.3671936132414</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0432F528562FD964A7EF">
+		<name>day41 jinghe</name>
+		<LookAt>
+			<longitude>82.88367428404668</longitude>
+			<latitude>44.61899217480835</latitude>
+			<altitude>323.6277728777654</altitude>
+			<heading>-7.221328311505711e-06</heading>
+			<tilt>1.267771079550936</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>141606.2585906312</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="055D3FDC1E2FD964A7F6">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>82.89105064727777,44.60408318731043,317.5823952731646</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02DBAC75EB2FDF0AEF1D">
+		<name>day42 sayram lake</name>
+		<LookAt>
+			<longitude>81.14150455396012</longitude>
+			<latitude>44.48778056487767</latitude>
+			<altitude>2137.306761740729</altitude>
+			<heading>341.9019623385924</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54901.64959785528</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="007433E20F2FDF0AEF24">1414</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>81.15449522999997,44.48154448999998,2011.823642159977</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="004B4CD4462FE37F5789">
+		<name>day43 Khorgas</name>
+		<LookAt>
+			<longitude>80.42357730306014</longitude>
+			<latitude>44.19386529107641</latitude>
+			<altitude>761.1026130924431</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>5030.491753114038</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0DFFECFCF83857008F4A</styleUrl>
+		<Point>
+			<coordinates>80.42357730306014,44.19386529107641,761.1026130924431</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="03C31654B62FF2967B5F">
+		<name>day46 Zharkent</name>
+		<LookAt>
+			<longitude>80.00752792330249</longitude>
+			<latitude>44.17184526576315</latitude>
+			<altitude>637.9139044735572</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1241.55177630324</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>80.00752792330249,44.17184526576315,637.9139044735572</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07A07D90D42FFEB282A4">
+		<name>day48-49 almaty</name>
+		<LookAt>
+			<longitude>76.90616550240834</longitude>
+			<latitude>43.24740185450607</latitude>
+			<altitude>796.8854598925461</altitude>
+			<heading>11.92192533671471</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1481.684036153311</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>76.90596261956814,43.2476078003225,797.2618855027058</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="089AC9263A2FFEB35D1F">
+		<name>day47 Shelek</name>
+		<gx:mid>/m/063zwlh</gx:mid>
+		<gx:fid>0x38816cfbfebc9ea7:0x87b8e820184d96</gx:fid>
+		<LookAt>
+			<longitude>78.25359809999999</longitude>
+			<latitude>43.5991321</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>18252.59883196954</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>78.25900539999999,43.5952077,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C1DCB60C3300AB1F310">
+		<name>day50 kenen</name>
+		<LookAt>
+			<longitude>75.57247659800603</longitude>
+			<latitude>43.39828979810262</latitude>
+			<altitude>961.0763840521938</altitude>
+			<heading>177.3995477122837</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1375146.784822941</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="06A00E192F300AB1F315">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>75.10231741424271,43.40460022305182,827.2796602192601</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06C057721D300DBC0501">
+		<name>day51 aspara</name>
+		<LookAt>
+			<longitude>74.57715927572282</longitude>
+			<latitude>42.60129004280804</latitude>
+			<altitude>1472.98426287678</altitude>
+			<heading>0.7791771530485988</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>6380548.759650969</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0FE0A66431300DBC050A">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>73.55994314439488,43.03598872202416,617.8883890146981</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A49AF1DB630141B8155">
+		<name>day52 akyrtobe</name>
+		<LookAt>
+			<longitude>72.09443230445764</longitude>
+			<latitude>42.9729323298749</latitude>
+			<altitude>745.0984728662479</altitude>
+			<heading>3.693600636230336</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>340254.1007559747</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0A1565FCEB30141B8167">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>72.09811685059299,42.99583469278551,623.9578780676766</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="082A3BD7A73016314F09">
+		<name>day53 Taraz</name>
+		<LookAt>
+			<longitude>76.21321435565882</longitude>
+			<latitude>41.18557201762484</latitude>
+			<altitude>2903.85964579004</altitude>
+			<heading>359.2647454453674</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2929729.539011121</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="03C3139F9D3016314F0D">7</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>71.38510449885369,42.90909250124304,617.5278986675683</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E5352B6463021C05116">
+		<name>day54</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>70.14748,42.55412,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0AF593F561302A3AAAE4">
+		<name>day56 Tashkent</name>
+		<LookAt>
+			<longitude>69.22449213211063</longitude>
+			<latitude>41.28024240344617</latitude>
+			<altitude>435.7094333772675</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>69.22449213211063,41.28024240344617,435.7094333772674</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09D8BDD4FD302A3F6B45">
+		<name>day55 shymkent</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>69.42707,41.87502,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="03DD3473D33034D7C9F4">
+		<name>day58</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>68.20565999999999,40.41421,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02340EE381303E07663E">
+		<name>day59-60 samarqand</name>
+		<LookAt>
+			<longitude>69.17308819116523</longitude>
+			<latitude>40.90690993801965</latitude>
+			<altitude>-101.9902536077832</altitude>
+			<heading>0.003675704076831716</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>4438030.883055926</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0C980CE086303E076646">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>66.98074995604594,39.65384833626329,719.2299735717847</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0282C2712E304126055E">
+		<name>day61 navoi</name>
+		<LookAt>
+			<longitude>64.80890368221621</longitude>
+			<latitude>39.92269182789776</latitude>
+			<altitude>438.077676478625</altitude>
+			<heading>359.9701587607222</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35.00000000000001</gx:fovy>
+			<range>1050061.327381879</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0803586B3B3041260563">36</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>65.36187743999999,40.14743040999998,346.2034801948075</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="03A087359E30484D8BC9">
+		<name>day62-63 bukhara</name>
+		<LookAt>
+			<longitude>64.76873252073753</longitude>
+			<latitude>38.56503059167333</latitude>
+			<altitude>-3892.569111882</altitude>
+			<heading>45.11531726763329</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>3581805.428572297</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>64.43605701246287,39.77536715604393,-3892.380382030711</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0CFCF5FD5A3052DD09EB">
+		<name>day64</name>
+		<LookAt>
+			<longitude>63.08869095178508</longitude>
+			<latitude>40.40265252577243</latitude>
+			<altitude>177.4922410815714</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>499.9999999999999</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0A72B0EEC43052DD09F1">46</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>63.08869100465543,40.40265467223157,177.4981218752967</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A34859DFB305633EFA8">
+		<name>special-point</name>
+		<LookAt>
+			<longitude>62.48596513732392</longitude>
+			<latitude>40.71966214041296</latitude>
+			<altitude>177.4686602266761</altitude>
+			<heading>359.9800456959525</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>718.8172261538422</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD3AAD1C23857008F4A</styleUrl>
+		<Point>
+			<coordinates>62.48596317955061,40.7196570045183,177.4623981836858</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07C97C7368305D90F0DF">
+		<name>day65-67 Urgench</name>
+		<LookAt>
+			<longitude>60.6551045058589</longitude>
+			<latitude>41.55712693197153</latitude>
+			<altitude>104.5797455054367</altitude>
+			<heading>359.9993514337132</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>35972.02878181357</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0331A06FB1305D90F0E7">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>60.6586291182033,41.56182513973926,99.42528573646894</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0BCC717F5E306573D2BA">
+		<name>day68 nukus</name>
+		<LookAt>
+			<longitude>58.97335991976814</longitude>
+			<latitude>39.34428395890406</latitude>
+			<altitude>997.0598179045378</altitude>
+			<heading>359.8816788407991</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>9034474.295010928</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0059306684306573D2C0">83</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>59.64068420633023,42.43841355942648,77.63002202148587</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="05CB7BF8A2306E64BEA9">
+		<name>day70 aktau</name>
+		<LookAt>
+			<longitude>51.20363614430335</longitude>
+			<latitude>43.59450700711321</latitude>
+			<altitude>168.1890767547909</altitude>
+			<heading>0.004491230721999678</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>814653.5070584714</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="09087FD63E306E64BEB8">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>51.16069797477865,43.63314079806045,-0.5107584781743213</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E87F4E2D5306E6626A1">
+		<name>point</name>
+		<LookAt>
+			<longitude>51.31303263517425</longitude>
+			<latitude>43.6876134964155</latitude>
+			<altitude>-0.5167668697555206</altitude>
+			<heading>350.7870268638123</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>708.77089571135</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD3AAD1C23857008F4A</styleUrl>
+		<Point>
+			<coordinates>51.31303263517425,43.6876134964155,-0.5167668697555206</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0CF2F42C63306E6796F0">
+		<name>day69 beynue</name>
+		<LookAt>
+			<longitude>55.1984396206586</longitude>
+			<latitude>45.31989856118584</latitude>
+			<altitude>6.311438671608515</altitude>
+			<heading>356.2600074491367</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1290.805194757122</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD3AAD1C23857008F4A</styleUrl>
+		<Point>
+			<coordinates>55.19748280373108,45.32112494188474,6.311438671608515</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00E5CEA26D307EF598C3">
+		<name>day73 baku</name>
+		<LookAt>
+			<longitude>50.05535713166637</longitude>
+			<latitude>40.07994628390811</latitude>
+			<altitude>242.8615098673225</altitude>
+			<heading>0.4316510284257238</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2360229.450585545</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="04F3DBE606307EF598CB">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>49.84268786124732,40.37259093734627,-0.5107473576232613</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D1A6514C4309B030ADB">
+		<name>day78</name>
+		<LookAt>
+			<longitude>47.01750052296346</longitude>
+			<latitude>39.94345732716846</latitude>
+			<altitude>734.804270475802</altitude>
+			<heading>359.8472348455593</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>3060366.03043735</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="05F2B51095309B030AE2">80</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>45.61768061214408,41.00338893786044,411.7777437391835</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="054476F293309B051209">
+		<name>day77</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>47.14371999999999,40.5972,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C7935D6E0309DFC957B">
+		<name>day76</name>
+		<LookAt>
+			<longitude>48.71415859714286</longitude>
+			<latitude>40.14194811509867</latitude>
+			<altitude>-18.13384178223339</altitude>
+			<heading>2.857278104032105e-15</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>712.0316130996798</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>48.71415859714286,40.14194811509867,-18.13384178223339</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0271A228C530B2ECB830">
+		<name>day83</name>
+		<LookAt>
+			<longitude>42.38001539985045</longitude>
+			<latitude>40.99960734579332</latitude>
+			<altitude>488.9751360027118</altitude>
+			<heading>359.2634906417192</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>3869270.721504092</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0B95CF7DD630B2ECB835">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>42.03570277602822,42.08774273947839,30.82276545181939</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="087EB856B730B2EEA0B6">
+		<name>day 79 Tibilisi</name>
+		<gx:mid>/g/11t7sy7gn5</gx:mid>
+		<gx:fid>0x4044733a0d458b29:0xbec0c8910caf322d</gx:fid>
+		<LookAt>
+			<longitude>44.757575</longitude>
+			<latitude>41.7132832</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1837.044217856014</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>44.757575,41.7132832,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="017211DDDE30BFC1EECA">
+		<name>day84 batumi</name>
+		<LookAt>
+			<longitude>41.69723935578792</longitude>
+			<latitude>41.83600577527516</latitude>
+			<altitude>5649.580137410898</altitude>
+			<heading>358.9589519302583</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>687634.530839324</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>41.63377537487407,41.65059732743918,5649.580137410898</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0274C7E39030C71B1261">
+		<name>day86 murat house</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>41.27350999999999,41.34482,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07A8BC8A3730C71BA364">
+		<name>day87 Trabzon</name>
+		<LookAt>
+			<longitude>39.95890793386784</longitude>
+			<latitude>40.95027109434526</latitude>
+			<altitude>18.76453716129051</altitude>
+			<heading>-0.6882703388170649</heading>
+			<tilt>0.1013848628829107</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>432737.5075413287</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="043137707030C71BA36E">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>39.69233755559272,40.99965289522756,31.23977975631044</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E0778D30C30CCB5283B">
+		<name>day88</name>
+		<LookAt>
+			<longitude>38.1254506623944</longitude>
+			<latitude>40.9006876097463</latitude>
+			<altitude>-1406.04242356598</altitude>
+			<heading>-0.9874944918831707</heading>
+			<tilt>0.1480598090470136</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>351566.1576744542</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="00BA68679F30CCB52843">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>38.1854243558281,40.94054249039946,2.363828210049714</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="035596240430D4E9EBDD">
+		<name>day89 Samsun</name>
+		<LookAt>
+			<longitude>36.33235361828657</longitude>
+			<latitude>41.29482979945092</latitude>
+			<altitude>11.8322662854075</altitude>
+			<heading>359.0286088893966</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>11722.60822566692</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0F3D0CFDB030D4E9EBEE">16</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>36.33492191539941,41.2911052107945,5.021303791517163</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0105B54C0730E8D7CF0A">
+		<name>day92-112 istanbul</name>
+		<LookAt>
+			<longitude>29.10106323919247</longitude>
+			<latitude>40.83877225673557</latitude>
+			<altitude>-961.0886746921884</altitude>
+			<heading>359.0017408714576</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2676253.604418933</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD3AAD1C23857008F4A</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0A6B7A20E230E8D7CF11">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>28.93014735950151,40.99948418290208,20.02717469572169</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0504B5D70F314DF284C3">
+		<name>day113 noname</name>
+		<LookAt>
+			<longitude>26.91220604478542</longitude>
+			<latitude>40.41439538838544</latitude>
+			<altitude>-7.726660431271766</altitude>
+			<heading>359.078919670338</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1333130.539505929</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0E4924F5ED314DF284CA">6</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>27.92098157916257,40.97039531598647,4.262848953670167</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0654868D06315811489B">
+		<name>day115 Poliantho</name>
+		<LookAt>
+			<longitude>25.20591770870519</longitude>
+			<latitude>41.12530246598316</latitude>
+			<altitude>174.4852033188183</altitude>
+			<heading>356.4841940116897</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>78278.64899707027</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="05650C7CDF31581148A3">4</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>25.22272334899765,41.12779536334504,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D730E94DA3158127AB4">
+		<name>day114 noname</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>26.17539,40.90372,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="096DC1AC823165036082">
+		<name>day117 Thessaloniki</name>
+		<LookAt>
+			<longitude>22.90920578311077</longitude>
+			<latitude>40.94582370029098</latitude>
+			<altitude>284.9720175012471</altitude>
+			<heading>359.0071533193965</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1057255.250747502</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="038D07D3E33165036089">14</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>22.95984059983216,40.64003548898312,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07E61236853165046F8D">
+		<name>day116 Aegean seaside</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>24.07801,40.72094,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A8D16896D3181209B3C">
+		<name>day123 Corinth</name>
+		<LookAt>
+			<longitude>22.89464721468749</longitude>
+			<latitude>37.93210788546108</latitude>
+			<altitude>1.684234110013816</altitude>
+			<heading>-1</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="06484A418A3181209B44">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>22.89464721468749,37.93210788546108,1.684234110013816</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="045DF93A933181220E83">
+		<name>day119 Athens</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>23.72483,37.99111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A0241DB37318B2CE18D">
+		<name>day124 Patras</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>21.78039,38.30795,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="070A28F890318E9461F7">
+		<name>day126 Bari</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>16.86444,41.13965,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E7333EFB13198544BD9">
+		<name>day127 seaside</name>
+		<LookAt>
+			<longitude>15.04532963631644</longitude>
+			<latitude>41.96662599729959</latitude>
+			<altitude>1.878404587263162</altitude>
+			<heading>359.0000000000028</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500.0003108545156</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0E2F713AB43198544BE0">4</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>15.0452180153326,41.96674818092447,1.849050604725573</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A120AAA2B31985502CE">
+		<name>day126 noname</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>16.08771,41.35767999999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="085DEF6AAE319D22E7E5">
+		<name>day128 pescara</name>
+		<LookAt>
+			<longitude>14.08414675637863</longitude>
+			<latitude>42.6076254382265</latitude>
+			<altitude>-32.43599014102379</altitude>
+			<heading>359.0000044613469</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>54840.72477475741</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0446A575F2319D22E7EF">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>14.07936096688217,42.59483240174036,8.160528803024988</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07DC705E4231ACD3E441">
+		<name>day131 Sanmarino</name>
+		<LookAt>
+			<longitude>12.57599338603062</longitude>
+			<latitude>44.28591106394376</latitude>
+			<altitude>55.19786419138585</altitude>
+			<heading>-13.02380868040103</heading>
+			<tilt>29.73319368888191</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>589498.7150086464</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="016B0A729A31ACD3E449">48</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>12.46183428504859,43.95944034550659,232.8597157238106</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07FCF01C1F31ACD4B852">
+		<name>day130 grassland</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>12.84362,43.93557999999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09222A481631ACD62675">
+		<name>day129 noname</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>13.56182,43.49943,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DCD8E38B731C173AE9D">
+		<name>day134 Bologna</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>11.16858,44.55562,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0790AB926831C1751AF5">
+		<name>day133 grassland</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>11.92681,44.26591,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="059E0E725631C1762641">
+		<name>day132 Remini</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>12.54346,44.00194,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04A895F21C31C17887E9">
+		<name>day135 parma</name>
+		<LookAt>
+			<longitude>10.3851814050478</longitude>
+			<latitude>44.78550368783781</latitude>
+			<altitude>47.07006700515814</altitude>
+			<heading>359.002317174398</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>8353.295636195246</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="09D0BFA51331C17887EF">4</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>10.3851896104521,44.78549385970415,48.17938371692286</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E15940A1C31C4148E03">
+		<name>day136 Piacenza</name>
+		<LookAt>
+			<longitude>9.472201285023766</longitude>
+			<latitude>46.79840663921362</latitude>
+			<altitude>-824.2027921636351</altitude>
+			<heading>356.3301010213994</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>5802616.289273501</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0EBC4E57F831C4148E08">7</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>9.706196756946396,45.05229547824067,50.31597806240352</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="076274CA0531C6D06975">
+		<name>day137 Milan</name>
+		<LookAt>
+			<longitude>9.289110907939591</longitude>
+			<latitude>45.46989847901627</latitude>
+			<altitude>-2318.108117191391</altitude>
+			<heading>359.0254927650481</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2678510.228424788</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD3AAD1C23857008F4A</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="01645BA60231C6D0697C">1414</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>9.233073580575187,45.48450462225713,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E3A58E44B31D1FC403E">
+		<name>day138 como</name>
+		<LookAt>
+			<longitude>9.051038671713258</longitude>
+			<latitude>45.82219757812371</latitude>
+			<altitude>1271.612913187482</altitude>
+			<heading>359.0000345828693</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>9.945211646585223</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="02FA5AA87231D1FC4045">15</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>9.050904489048053,45.82212235047624,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="067962328031D3FBBD23">
+		<name>day139 noname</name>
+		<LookAt>
+			<longitude>8.80207392721322</longitude>
+			<latitude>46.49719221218406</latitude>
+			<altitude>2237.048528061725</altitude>
+			<heading>359.1742276341596</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>872564.4145211577</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="07F628856C31D3FBBD32">4</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>8.910680804082235,46.13682340474928,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="02511BD58431D9108CC8">
+		<name>day140 Rodi</name>
+		<LookAt>
+			<longitude>8.750168797760294</longitude>
+			<latitude>46.5052244182755</latitude>
+			<altitude>-489.6889210900147</altitude>
+			<heading>359.0230769768016</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>21968.20038369158</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>8.750168797760294,46.5052244182755,-489.6889210900146</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0EBA0F44D731DDE80C07">
+		<name>day141 Gotthardpass</name>
+		<LookAt>
+			<longitude>8.567252748878065</longitude>
+			<latitude>46.55574340063265</latitude>
+			<altitude>3753.92876872795</altitude>
+			<heading>347.192563472885</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>9.948703496788768</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0BBEB5BE3B31DDE80C17">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>8.567252527127321,46.55574772814368,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="007705B4D531E8B1161E">
+		<name>day143 interlaken</name>
+		<LookAt>
+			<longitude>7.865311466835402</longitude>
+			<latitude>46.69094145350776</latitude>
+			<altitude>-285.4823810146423</altitude>
+			<heading>357.9964001625086</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>33266.19127278441</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="000DFAEF3331E8B11624">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>7.8614524837207,46.69030282557001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="00B733FD9231E8B2016B">
+		<name>day142 susten</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>8.467359999999999,46.74694000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="054ADC648231F02542A7">
+		<name>day144 Bern</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>7.49593,46.93977,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DE55CED5F31FA62AC69">
+		<name>day146 france-border</name>
+		<LookAt>
+			<longitude>6.369606701063303</longitude>
+			<latitude>46.7831517641926</latitude>
+			<altitude>973.6044283237086</altitude>
+			<heading>358.9999999016488</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>154174.2996056937</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0224CD9D4A31FA62AC71">4</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>6.382527130059225,46.76919241474302,1013.859164248024</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01964087E031FA64C918">
+		<name>day145 lakeside</name>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>6.819199999999999,46.84057000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0CAFAD7A8631FCFED507">
+		<name>day147 courtyard</name>
+		<LookAt>
+			<longitude>5.5998643602405</longitude>
+			<latitude>46.99202260611244</latitude>
+			<altitude>-440.3131203923188</altitude>
+			<heading>359.3078331915193</heading>
+			<tilt>0</tilt>
+			<gx:fovy>34.99999999832973</gx:fovy>
+			<range>809769.6415055352</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0241BF46E431FCFED50E">7</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>5.530469398467081,47.00106212120985,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0E0299B1193202739527">
+		<name>day148 dijon</name>
+		<LookAt>
+			<longitude>5.003167020619346</longitude>
+			<latitude>47.34161928553596</latitude>
+			<altitude>321.8538544828971</altitude>
+			<heading>358.9999925706644</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>323.0382082735742</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>5.003161523321396,47.34162119342246,321.8899366874369</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F118FAA0B320766CA9B">
+		<name>day149 Alésia</name>
+		<LookAt>
+			<longitude>4.468862218900094</longitude>
+			<latitude>47.53794057335423</latitude>
+			<altitude>245.9550139504521</altitude>
+			<heading>-1.024434239468047</heading>
+			<tilt>0.736832867048771</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>46452.49865249265</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0F02386429320766CAA0">4845</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>4.466311930012223,47.53956984999836,239.7719998034557</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0F1C65F841320CB9C538">
+		<name>day150 grassland</name>
+		<LookAt>
+			<longitude>3.327209286771829</longitude>
+			<latitude>48.03315616923403</latitude>
+			<altitude>94.80063965704029</altitude>
+			<heading>-1</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<Point>
+			<coordinates>3.327209286771829,48.03315616923403,94.80063965704029</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="087AB2044C321438BA7C">
+		<name>day151 sivry</name>
+		<LookAt>
+			<longitude>2.766911730613896</longitude>
+			<latitude>48.51934030032967</latitude>
+			<altitude>-420</altitude>
+			<heading>-1</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>500</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="07B39732E9321438BA83">5</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>2.766911730613896,48.51934030032967,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="048ED4470C321734DB59">
+		<name>day152 Paris</name>
+		<LookAt>
+			<longitude>2.379005502131584</longitude>
+			<latitude>48.88859522214143</latitude>
+			<altitude>-0.8171946063127725</altitude>
+			<heading>359.0268987459272</heading>
+			<tilt>0</tilt>
+			<gx:fovy>34.92459323562614</gx:fovy>
+			<range>7264.242575665136</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AD0D273C93857008F49</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="file://earth/8198667704808560154#__managed_schema">
+				<SimpleData name="0FFEF77D41321734DB60">35</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<extrude>1</extrude>
+			<coordinates>2.378857629951823,48.88860552749306,51.45638162171212</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
