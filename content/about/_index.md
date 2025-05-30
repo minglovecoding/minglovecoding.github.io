@@ -40,8 +40,8 @@ paginate_by: 0
 - 2016.09 - 2020.6：🔥齐鲁工业大学  本科  林产化工
 
 ## 学术成果
-- [FAITH: A Fast Blockchain-Assisted Edge Computing Platform for Healthcare Applications](https://ieeexplore.ieee.org/abstract/document/9756310)
-- 用于调度任务的方法及装置[CN114864069A](https://patentimages.storage.googleapis.com/17/5e/af/53d393c5c2c413/CN114864069A.pdf)
+- [论文](https://ieeexplore.ieee.org/abstract/document/9756310)：FAITH: A Fast Blockchain-Assisted Edge Computing Platform for Healthcare Applications
+- [专利](https://patentimages.storage.googleapis.com/17/5e/af/53d393c5c2c413/CN114864069A.pdf)：用于调度任务的方法及装置 CN114864069A
 
 ## 工作经历
 - 2013.07 - 2023.12：🚗 BYD  技术项目管理
