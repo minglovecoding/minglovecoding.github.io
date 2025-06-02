@@ -30,6 +30,9 @@ paginate_by: 0
 
 > <div id="typed-text" class="underline"></div> <!-- 添加 class -->
 
+- Cycling from Shenzhen to Paris
+![alt text](image.png)
+
 ---
 ## Hi there 👋
 
