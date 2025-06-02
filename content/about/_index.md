@@ -30,9 +30,6 @@ paginate_by: 0
 
 > <div id="typed-text" class="underline"></div> <!-- 添加 class -->
 
-- Cycling from Shenzhen to Paris
-![alt text](image.png)
-
 ---
 ## Hi there 👋
 
@@ -52,6 +49,7 @@ paginate_by: 0
 
 ## 其他经历
 - 2024.02 - 2024.8：🚴‍♀️[从深圳骑行去法国巴黎](https://www.bilibili.com/video/BV1dpsjebE2d/?share_source=copy_web&vd_source=543b94802d84e6e76a193e0c7e9a4540)
+![alt text](image.png)
 
 ## 联系方式
 📫 Email: minglovecoding@gmail.com  
