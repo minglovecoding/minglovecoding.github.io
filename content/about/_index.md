@@ -36,9 +36,9 @@ paginate_by: 0
 🤔 我是Mingo(周明昭),一个正在沉淀的程序员。
 
 ## 教育经历
-- 2020.09 - 2023.07：🦍深圳大学   硕士    计算机技术
-- 2016.09 - 2020.06：🔥齐鲁工业大学  本科  林产化工
-- 2013.01 - 2016.06： 衡阳县第三中学
+- 2020.09 - 2023.07：👨‍🎓深圳大学   硕士    计算机技术
+- 2016.09 - 2020.06：👨‍🏫齐鲁工业大学  本科  林产化工
+- 2013.01 - 2016.06：🙇‍♂️衡阳县第三中学
 
 ## 学术成果
 - [**论文**](https://ieeexplore.ieee.org/abstract/document/9756310)：FAITH: A Fast Blockchain-Assisted Edge Computing Platform for Healthcare Applications
