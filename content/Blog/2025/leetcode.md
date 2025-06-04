@@ -26,7 +26,7 @@ trie.search("app");     // 返回 False
 trie.startsWith("app"); // 返回 True  
 trie.insert("app");  
 trie.search("app");     // 返回 True  
->思路：前缀树经典题，初始化26字符数组[]和结尾bool值。
+>思路：前缀树经典题，初始化26字符数组[]和结尾bool值，需理解ord()和chr()用法。
 
 ```
 class Trie:
