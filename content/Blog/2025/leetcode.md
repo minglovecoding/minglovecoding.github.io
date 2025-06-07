@@ -5,6 +5,40 @@ taxonomies:
   tags:
     - leetcode
 ---
+
+- 347.前K个高频元素
+给你一个整数数组 nums 和一个整数 k ，请你返回其中出现频率前 k 高的元素。你可以按 任意顺序 返回答案。  
+示例 1:  
+输入: nums = [1,1,1,2,2,3], k = 2  
+输出: [1,2]  
+> 思路：先统计每个字符出现的次数，然后用heappq加入进来，注意heappq用法，heapq.push(res,num)是直接加入num，heapq.pushpop(res,num)是加入一个数再弹出最小值，遍历字典值是dict.items()。
+
+```
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        #temp=Counter(nums).most_common(k)
+        #res=[]
+        #for item,_ in temp:
+        #    res.append(item)
+        #return res
+         
+        dic={}
+        for num in nums:
+            dic[num]=dic.setdefault(num,0)+1
+        heapk=[]
+        for num,cnt in dic.items():
+            if len(heapk)<k:
+                heapq.heappush(heapk,(cnt,num))
+            elif cnt>heapk[0][0]:
+                heapq.heappushpop(heapk,(cnt,num))
+                print(1)
+        res=[]
+        for cnt,num in heapk:
+            res.append(num)
+        return res
+        
+```
+
 - 208.实现Trie(前缀树)
 Trie（发音类似 "try"）或者说 前缀树 是一种树形数据结构，用于高效地存储和检索字符串数据集中的键。这一数据结构有相当多的应用情景，例如自动补全和拼写检查。  
 请你实现 Trie 类：  
