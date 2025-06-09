@@ -6,6 +6,37 @@ taxonomies:
     - leetcode
 ---
 
+- 763.划分字母区间
+给你一个字符串 s 。我们要把这个字符串划分为尽可能多的片段，同一字母最多出现在一个片段中。例如，字符串 "ababcc" 能够被分为 ["abab", "cc"]，但类似 ["aba", "bcc"] 或 ["ab", "ab", "cc"] 的划分是非法的。  
+注意，划分结果需要满足：将所有划分结果按顺序连接，得到的字符串仍然是 s 。  
+返回一个表示每个字符串片段的长度的列表。  
+示例 1：  
+输入：s = "ababcbacadefegdehijhklij"  
+输出：[9,7,8]  
+解释：  
+划分结果为 "ababcbaca"、"defegde"、"hijhklij" 。  
+每个字母最多出现在一个片段中。  
+像 "ababcbacadefegde", "hijhklij" 这样的划分是错误的，因为划分的片段数较少  
+> 思路：1.记录每个字符在字符串里最后的位置 2.用end标记最远的距离 3.遍历字符串所有字符，当找到end，输出。需注意ord用法。
+
+```
+class Solution:
+    def partitionLabels(self, s: str) -> List[int]:
+        start=end=0
+        last=[0]*26
+        res=list()
+        for i,str1 in enumerate(s):
+            last[ord(str1)-ord("a")]=i
+
+        for i,str1 in enumerate(s):
+            end=max(end,last[ord(str1)-ord("a")])
+            if i==end:
+                res.append(end-start+1)
+                start=end+1
+        return res
+
+```
+
 - 45.跳跃游戏II
 给定一个长度为 n 的 0 索引整数数组 nums。初始位置为 nums[0]。  
 每个元素 nums[i] 表示从索引 i 向后跳转的最大长度。换句话说，如果你在 nums[i] 处，你可以跳转到任意 nums[i + j] 处:  
