@@ -5,6 +5,31 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 279.完全平方数
+给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。  
+完全平方数 是一个整数，其值等于另一个整数的平方；换句话说，其值等于一个整数自乘的积。例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是。  
+示例 1：  
+输入：n = 12  
+输出：3   
+解释：12 = 4 + 4 + 4  
+> 思路：完全背包，用二维数组f[i][j]计算，i表示乘数，j表示目标数。设立边界f[0][0]=0,f[0][N]=inf。
+
+```
+N=10000
+f=[[0]*(N+1) for _ in range(isqrt(N)+1)]
+f[0]=[0]+[inf]*N
+for i in range(1,len(f)):
+    for j in range(N+1):
+        if j<i*i:
+            f[i][j]=f[i-1][j]
+        else:
+            f[i][j]=min(f[i-1][j],f[i][j-i*i]+1)
+
+class Solution:
+    def numSquares(self, n: int) -> int:
+        return f[isqrt(n)][n]
+        
+```
 
 - 763.划分字母区间
 给你一个字符串 s 。我们要把这个字符串划分为尽可能多的片段，同一字母最多出现在一个片段中。例如，字符串 "ababcc" 能够被分为 ["abab", "cc"]，但类似 ["aba", "bcc"] 或 ["ab", "ab", "cc"] 的划分是非法的。  
