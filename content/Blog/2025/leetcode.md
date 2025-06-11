@@ -5,6 +5,55 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 139.单词拆分
+给你一个字符串 s 和一个字符串列表 wordDict 作为字典。如果可以利用字典中出现的一个或多个单词拼接出 s 则返回 true。  
+注意：不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。  
+示例 1：  
+输入: s = "leetcode", wordDict = ["leet", "code"]  
+输出: true  
+解释: 返回 true 因为 "leetcode" 可以由 "leet" 和 "code" 拼接成。  
+>思路：从左向右遍历，遍历n-1次，初始化所有dp[i]=1,每一次遍历判断一次dp[i]是否小于dp[j],如是dp[j]=dp[i]+1。
+
+```
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        n=len(nums)
+        dp=[1]*n
+        for i in range(1,n):
+            for j in range(i):
+                if nums[j]<nums[i]:
+                    dp[i]=max(dp[i],dp[j]+1)
+        return max(dp)
+
+```
+
+- 322.零钱兑换  
+给你一个整数数组 coins ，表示不同面额的硬币；以及一个整数 amount ，表示总金额。  
+计算并返回可以凑成总金额所需的 最少的硬币个数 。如果没有任何一种硬币组合能组成总金额，返回 -1 。  
+你可以认为每种硬币的数量是无限的。  
+示例 1：  
+输入：coins = [1, 2, 5], amount = 11  
+输出：3   
+解释：11 = 5 + 5 + 1  
+>思路：完全背包，返回结果f[n][amount],当数组中的值不确定时用enumerate遍历。
+
+```
+class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        n=len(coins)
+        f=[[inf]*(amount+1) for _ in range(n+1)]
+        f[0][0]=0
+        for i,j in enumerate(coins):
+            for value in range(amount+1):
+                if value<j:
+                    f[i+1][value]=f[i][value]
+                else:
+                    f[i+1][value]=min(f[i][value],f[i+1][value-j]+1)
+        ans=f[n][amount]
+        return ans if ans<inf else -1
+
+```
+
 - 279.完全平方数
 给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。  
 完全平方数 是一个整数，其值等于另一个整数的平方；换句话说，其值等于一个整数自乘的积。例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是。  
@@ -28,7 +77,7 @@ for i in range(1,len(f)):
 class Solution:
     def numSquares(self, n: int) -> int:
         return f[isqrt(n)][n]
-        
+
 ```
 
 - 763.划分字母区间
