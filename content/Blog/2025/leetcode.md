@@ -5,6 +5,28 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 152.乘积最大子数组
+给你一个整数数组 nums ，请你找出数组中乘积最大的非空连续 子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。  
+测试用例的答案是一个 32-位 整数。  
+示例 1:  
+输入: nums = [2,3,-2,4]  
+输出: 6  
+解释: 子数组 [2,3] 有最大乘积 6。  
+> 思路：动态规划，只需要考虑每个数当前的状态。只需在之前的状态更新即可，设maxx和minn。maxx=(pre_maxx*num,pre_minn*num,num)，每次更新res值。
+
+```
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        maxx=minn=res=nums[0]
+        for num in nums[1:]:
+            maxx1=max(maxx*num,minn*num,num)
+            minn1=min(maxx*num,minn*num,num)
+            res=max(res,maxx1)
+            maxx=maxx1
+            minn=minn1
+        return res
+```
+
 - 139.单词拆分
 给你一个字符串 s 和一个字符串列表 wordDict 作为字典。如果可以利用字典中出现的一个或多个单词拼接出 s 则返回 true。  
 注意：不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。  
