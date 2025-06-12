@@ -12,7 +12,7 @@ taxonomies:
 输入: nums = [2,3,-2,4]  
 输出: 6  
 解释: 子数组 [2,3] 有最大乘积 6。  
-> 思路：动态规划，只需要考虑每个数当前的状态。只需在之前的状态更新即可，设maxx和minn。maxx=(pre_maxx*num,pre_minn*num,num)，每次更新res值。
+> 思路：动态规划，只需要考虑每个数当前的状态。只需在之前的状态更新即可，设maxx和minn。maxx=(pre_maxx`*`num,pre_minn`*`num,num)，每次更新res值。
 
 ```
 class Solution:
