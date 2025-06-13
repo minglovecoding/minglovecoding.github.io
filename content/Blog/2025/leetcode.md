@@ -5,6 +5,54 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 139.单词拆分
+给你一个字符串 s 和一个字符串列表 wordDict 作为字典。如果可以利用字典中出现的一个或多个单词拼接出 s 则返回 true。  
+注意：不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。  
+示例 1：  
+输入: s = "leetcode", wordDict = ["leet", "code"]  
+输出: true  
+解释: 返回 true 因为 "leetcode" 可以由 "leet" 和 "code" 拼接成。  
+>思路：动态规划，初始化dp=[False]*(n+1),dp[0]等于True,用双层循环遍历字符s'是否在字符串s里。注意s[i:j]是指s[i]~s[j-1]。
+```
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        n=len(s)
+        dp=[False]*(n+1)
+        dp[0]=True
+        for i in range(n):
+            for j in range(i+1,n+1):
+                if dp[i]==True and s[i:j] in wordDict:
+                    dp[j]=True
+        return dp[n]
+
+```
+
+- 416.分割等和子集
+给你一个只包含正整数的非空数组nums。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。  
+示例 1：  
+输入：nums = [1,5,11,5]  
+输出：true  
+解释：数组可以分割成 [1, 5, 5] 和 [11]。  
+>思路：0-1背包问题，选与不选。累积所有数sum/2。如果为奇数，不可能，偶数则在nums里选数个和为sum/2。
+```
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        cnt=sum(nums)
+        if cnt%2:
+            return False
+        n=len(nums)
+        cnt//=2
+        f=[[False]*(cnt+1) for _ in range(n+1)]
+        f[0][0]=True
+        for i,x in enumerate(nums):
+            for j in range(cnt+1):
+                if j<x:
+                    f[i+1][j]=f[i][j]
+                else:
+                    f[i+1][j]=f[i][j-x] or f[i][j]
+        return f[n][cnt]
+
+```
 - 152.乘积最大子数组
 给你一个整数数组 nums ，请你找出数组中乘积最大的非空连续 子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。  
 测试用例的答案是一个 32-位 整数。  
