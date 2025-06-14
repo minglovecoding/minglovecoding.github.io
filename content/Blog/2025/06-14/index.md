@@ -7,7 +7,8 @@ taxonomies:
 ---
 
 今天周六一天啥也没干，就刷了Youtube看电视。明天上点强度刷leetcode题，先立个flag，看明天是否能实现。如果能实现，后面尽量多用日历排每日计划。
-![alt text](calendar.png)
+好像回忆过去的事只会给我带来浮躁~
+![calendar](calendar.png)
 
 
 
