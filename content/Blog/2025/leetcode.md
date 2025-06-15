@@ -5,6 +5,41 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 32.最长有效括号
+给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度。  
+示例 1：  
+输入：s = "(()"  
+输出：2  
+解释：最长有效括号子串是 "()"  
+>思路：对()下标标1用dp数组存储，遍历dp数组，找出连续的最长1。
+```
+class Solution:
+    def longestValidParentheses(self, s: str) -> int:
+        #对()下标标记1
+        #求最长连续1的值
+        stack=[]
+        res=0
+        n=len(s)
+        dp=[0]*n
+        cnt=0
+        for i in range(n):
+            if s[i]=="(":
+                stack.append(i)
+            else:
+                if stack:
+                    j=stack.pop()
+                    dp[i],dp[j]=1,1
+        for item in dp:
+            if item:
+                cnt+=1
+            else:
+                res=max(res,cnt)
+                cnt=0
+        res=max(res,cnt)
+        return res
+
+```
+
 - 139.单词拆分
 给你一个字符串 s 和一个字符串列表 wordDict 作为字典。如果可以利用字典中出现的一个或多个单词拼接出 s 则返回 true。  
 注意：不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。  
