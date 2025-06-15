@@ -5,6 +5,94 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 72.编辑距离
+给你两个单词 word1 和 word2， 请返回将 word1 转换成 word2 所使用的最少操作数 。  
+你可以对一个单词进行如下三种操作：  
+插入一个字符  
+删除一个字符  
+替换一个字符  
+示例 1：  
+输入：word1 = "horse", word2 = "ros"  
+输出：3  
+解释：  
+horse -> rorse (将 'h' 替换为 'r')  
+rorse -> rose (删除 'r')  
+rose -> ros (删除 'e')  
+>思路：二维动态规划，需要注意当x!=y时，插入、删除、替换的状态方程是：f[i+1][j+1]=min(f[i+1][j]，f[i][j+1],f[i][j])+1。
+```
+class Solution:
+    def minDistance(self, word1: str, word2: str) -> int:
+        m=len(word1)
+        n=len(word2)
+        f=[[0]*(n+1) for _ in range(m+1)]
+        for i in range(n+1):
+            f[0][i]=i
+        for i,x in enumerate(word1):
+            f[i+1][0]=i+1
+            for j,y in enumerate(word2):
+                if x==y:
+                    f[i+1][j+1]=f[i][j]
+                else:
+                    f[i+1][j+1]=min(f[i][j+1],f[i+1][j],f[i][j])+1
+        return f[m][n]
+
+```
+- 1143.最长公共子序列
+给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。  
+一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。  
+例如，"ace" 是 "abcde" 的子序列，但 "aec" 不是 "abcde" 的子序列。  
+两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。  
+示例 1：  
+输入：text1 = "abcde", text2 = "ace"   
+输出：3    
+解释：最长公共子序列是 "ace" ，它的长度为 3 。  
+>思路：二维动态规划，dp第一行第一列都初始化为0，#dp[i][j]=dp[i-1][j-1]+1 text1[i]==text2[j]，dp[i][j]=max(dp[i-1][j],dp[i][j-1]) text1[i]!=text2[j]
+
+```
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        #动态规划二维数组dp
+        #dp第一行第一列都初始化为0
+        #dp[i][j]=dp[i-1][j-1]+1 text1[i]==text2[j]
+        #dp[i][j]=max(dp[i-1][j],dp[i][j-1]) text1[i]!=text2[j]
+        m=len(text1)
+        n=len(text2)
+        dp=[[0]*(n+1) for _ in range(m+1)]
+        for i in range(1,m+1):
+            for j in range(1,n+1):
+                if text1[i-1]==text2[j-1]:
+                    dp[i][j]=dp[i-1][j-1]+1
+                else:
+                    dp[i][j]=max(dp[i-1][j],dp[i][j-1])
+        return dp[m][n]
+```
+
+- 5.最长回文子串
+给你一个字符串 s，找到 s 中最长的 回文 子串。  
+示例 1：  
+输入：s = "babad"  
+输出："bab"  
+解释："aba" 同样是符合题意的答案。  
+>思路：回文子串用暴力法。用双层循环取子串t,只需判断t是否等于t[::-1]。
+```
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n=len(s)
+        res=[]
+        for i in range(n):
+            for j in range(i+1,n+1):
+                t=s[i:j]
+                if(t==t[::-1]):
+                    res.append(t)
+        cnt=0
+        for i in range(len(res)):
+            cnt=max(cnt,len(res[i]))
+        for item in res:
+            if(len(item)==cnt):
+                return item
+
+```
+
 - 32.最长有效括号
 给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度。  
 示例 1：  
