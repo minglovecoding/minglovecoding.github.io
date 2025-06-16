@@ -5,6 +5,26 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 46.全排列
+给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。  
+示例 1：  
+输入：nums = [1,2,3]  
+输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]  
+>思路:很明显的深搜，用tmp逐个存放值，最后用res添加。
+```
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        res=[]
+        def dfs(nums,tmp):
+            if not nums:
+                res.append(tmp)
+            for i in range(len(nums)):
+                dfs(nums[:i]+nums[i+1:],tmp+[nums[i]])
+        dfs(nums,[])
+        return res
+        
+```
+
 - 72.编辑距离
 给你两个单词 word1 和 word2， 请返回将 word1 转换成 word2 所使用的最少操作数 。  
 你可以对一个单词进行如下三种操作：  
