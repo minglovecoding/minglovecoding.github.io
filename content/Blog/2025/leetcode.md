@@ -5,6 +5,71 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 51.N皇后
+按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。  
+n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。  
+给你一个整数 n ，返回所有不同的 n 皇后问题 的解决方案。  
+每一种解法包含一个不同的 n 皇后问题 的棋子放置方案，该方案中 'Q' 和 '.' 分别代表了皇后和空位。  
+示例 1：  
+输入：n = 4  
+输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]  
+解释：如上图所示，4 皇后问题存在两个不同的解法。  
+>思路：N皇后问题主要考虑判别原理，纵轴、左斜对角、右斜对角都无任何皇后，用True或False进行标记。深搜用dfs(row=0)进行，用mark进行标记。
+```
+class Solution:
+    def solveNQueens(self, n: int) -> List[List[str]]:
+        #用diag1存正对角线
+        #用diag2存负对角线
+        #用col存纵轴
+        #用queens=[0]*n 存皇后 
+        #用res表示结果
+        res=[]
+        mark=[0]*n
+        col=[False]*n
+        diag1=[False]*(2*n-1)
+        diag2=[False]*(2*n-1)
+        def dfs(row):
+            if row==n:
+                res.append(['.'*c+'Q'+'.'*(n-1-c)for c in mark])
+                return 
+            for index,yes in enumerate(col):
+                if not yes and not diag1[row+index] and not diag2[row-index]:
+                    mark[row]=index
+                    col[index]=diag1[row+index]=diag2[row-index]=True
+                    dfs(row+1)
+                    col[index]=diag1[row+index]=diag2[row-index]=False
+        dfs(0)
+        return res
+
+```
+
+- 131.分割回文串
+给你一个字符串 s，请你将 s 分割成一些 子串，使每个子串都是 回文串 。返回 s 所有可能的分割方案。  
+示例 1：  
+输入：s = "aab"  
+输出：[["a","a","b"],["aa","b"]]  
+>#经典递归
+```
+class Solution:
+    def partition(self, s: str) -> List[List[str]]:
+        
+        n=len(s)
+        res=[]
+        path=[]
+        def dfs(i):
+            if i==n:
+                res.append(path.copy())
+                return
+            for j in range(i,n):
+                t=s[i:j+1]
+                if t==t[::-1]:
+                    path.append(t)
+                    dfs(j+1)
+                    path.pop()
+        dfs(0)
+        return res
+```
+
 - 79.单词搜索
 给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。  
 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。  
