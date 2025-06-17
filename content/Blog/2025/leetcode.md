@@ -5,6 +5,49 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 79.单词搜索
+给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。  
+单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。  
+示例 1：  
+输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"  
+输出：true  
+>思路： #可能在任一一点dfs
+        #dfs需设置三个参数，x,y坐标和数组k值。
+        #dfs时有上下左右四个方向。
+        #设置边界 继续递归。
+        #当visit时需标记，访问完需恢复标记。
+        #优化，首部->尾部和尾部->首部一样
+        #如果尾部元素个数明显小于首部元素，则优先访问尾部元素。
+```
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        #可能在任一一点dfs。
+        #dfs需设置三个参数，x,y坐标和数组k值。 
+        #dfs时有上下左右四个方向。
+        #设置边界 继续递归。
+        #当visit时需标记，访问完需恢复标记。
+        m,n=len(board),len(board[0])
+        def dfs(x,y,z):
+            if board[x][y]!=word[z]:
+                return False
+            if z==len(word)-1:
+                return True
+            board[x][y]=""
+            for i,j in (x+1,y),(x-1,y),(x,y+1),(x,y-1):
+                if 0<=i<m and 0<=j<n:
+                    if dfs(i,j,z+1):
+                        return True
+            board[x][y]=word[z]
+            return False
+
+        for i in range(m):
+            for j in range(n):
+                if dfs(i,j,0):
+                    return True
+        return False
+
+```
+
 - 22.括号生成
 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。  
 示例 1：  
