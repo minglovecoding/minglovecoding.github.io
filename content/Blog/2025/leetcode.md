@@ -5,6 +5,68 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 33.搜索旋转排序数组
+整数数组 nums 按升序排列，数组中的值 互不相同 。  
+在传递给函数之前，nums 在预先未知的某个下标 k（0 <= k < nums.length）上进行了 旋转，使数组变为 [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]（下标 从 0 开始 计数）。例如， [0,1,2,4,5,6,7] 在下标 3 处经旋转后可能变为 [4,5,6,7,0,1,2] 。  
+给你 旋转后 的数组 nums 和一个整数 target ，如果 nums 中存在这个目标值 target ，则返回它的下标，否则返回 -1 。  
+你必须设计一个时间复杂度为 O(log n) 的算法解决此问题。  
+示例 1：  
+输入：nums = [4,5,6,7,0,1,2], target = 0  
+输出：4  
+>思路：首先判断mid是在左有序数组中还是在右有序数中。再判断target是在有序数组中还是在无序数组中，移动left或right。
+```
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        left,right=0,len(nums)-1
+        while (left<=right):
+            mid=(left+right)//2
+            if nums[mid]==target:
+                return mid
+            if nums[0]<=nums[mid]:
+                if nums[0]<=target<nums[mid]:
+                    right=mid-1
+                else:
+                    left=mid+1
+            else:
+                if nums[mid]<target<=nums[len(nums)-1]:
+                    left=mid+1
+                else:
+                    right=mid-1
+        return -1
+
+```
+
+- 34.在排序数组中查找元素的第一个和最后一个位置
+给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。  
+如果数组中不存在目标值 target，返回 [-1, -1]。  
+你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。  
+示例 1：  
+输入：nums = [5,7,7,8,8,10], target = 8  
+输出：[3,4]  
+>思路：用二分查找寻找某个值的首次出现时间，最后一个位置用low_bound(nums,target+1)-1表示。需要提前处理好找不到的情况。
+
+```
+class Solution:
+    def find_first(self,nums,target):
+        left,right=0,len(nums)-1
+        while(left<=right):
+            mid=(left+right)//2
+            if target<=nums[mid]:
+                right=mid-1
+            else:
+                left=mid+1
+        return left
+
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        #二分查找
+        start=self.find_first(nums,target)
+        if start==len(nums) or nums[start]!=target:
+            return [-1,-1]
+        end=self.find_first(nums,target+1)-1
+        return [start,end]
+
+```
+
 - 51.N皇后
 按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。  
 n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。  
