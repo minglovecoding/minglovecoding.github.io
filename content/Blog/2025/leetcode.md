@@ -5,6 +5,47 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 295.数据流的中位数
+中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。  
+例如 arr = [2,3,4] 的中位数是 3 。  
+例如 arr = [2,3] 的中位数是 (2 + 3) / 2 = 2.5 。  
+实现 MedianFinder 类:  
+MedianFinder() 初始化 MedianFinder 对象。  
+void addNum(int num) 将数据流中的整数 num 添加到数据结构中。  
+double findMedian() 返回到目前为止所有元素的中位数。与实际答案相差 10-5 以内的答案将被接受。  
+示例 1：  
+输入  
+["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]  
+[[], [1], [2], [], [3], []]   
+输出  
+[null, null, null, 1.5, null, 2.0]  
+解释  
+MedianFinder medianFinder = new MedianFinder();  
+medianFinder.addNum(1);    // arr = [1]  
+medianFinder.addNum(2);    // arr = [1, 2]  
+medianFinder.findMedian(); // 返回 1.5 ((1 + 2) / 2)  
+medianFinder.addNum(3);    // arr[1, 2, 3]  
+medianFinder.findMedian(); // return 2.0  
+>思路：1.左边是最大堆 2.右边是最小堆 3.分割线一分为二 4.如果左堆大于右堆 直接返回max_stack[0],否则返回两个堆顶元素平均值
+```
+class MedianFinder:
+    def __init__(self):
+        self.maxx=[] #左大堆
+        self.minn=[] #右小堆
+        
+    def addNum(self, num: int) -> None:
+        if len(self.maxx)==len(self.minn):
+            heappush(self.maxx,-heappushpop(self.minn,num))
+        else:
+            heappush(self.minn,-heappushpop(self.maxx,-num))
+        
+    def findMedian(self) -> float:
+        if len(self.maxx)>len(self.minn):
+            return -self.maxx[0]
+        else:
+            return (self.minn[0]-self.maxx[0])/2
+```
+
 - 153.寻找旋转排序数组中的最小值
 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,2,4,5,6,7] 在变化后可能得到：  
 若旋转 4 次，则可以得到 [4,5,6,7,0,1,2]  
