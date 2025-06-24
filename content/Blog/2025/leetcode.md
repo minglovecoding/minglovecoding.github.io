@@ -5,6 +5,81 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 15.三数之和
+给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请你返回所有和为 0 且不重复的三元组。  
+注意：答案中不可以包含重复的三元组。  
+示例 1：  
+输入：nums = [-1,0,1,2,-1,-4]  
+输出：[[-1,-1,2],[-1,0,1]]  
+>思路：先sort数组排序，用for循环逐个遍历left值。mid值往右遍历，同时right值向左遍历，当相遇即停止。
+```
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        res=list()
+        nums.sort()
+        n=len(nums)
+        for left in range(n):
+            if left==0 or nums[left]!=nums[left-1]:
+                target=-nums[left]
+                right=n-1
+                for mid in range(left+1,n):
+                    if mid==left+1 or nums[mid]!=nums[mid-1]:
+                        while mid<right and nums[mid]+nums[right]>target:
+                            right-=1
+                        if mid==right:
+                            break
+                        if nums[mid]+nums[right]==target:
+                            res.append([nums[left],nums[mid],nums[right]])
+        return res
+
+```
+
+- 128.最长连续序列
+给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度。  
+请你设计并实现时间复杂度为 O(n) 的算法解决此问题。  
+示例 1：  
+输入：nums = [100,4,200,1,3,2]  
+输出：4  
+解释：最长数字连续序列是 [1, 2, 3, 4]。它的长度为 4。  
+>思路：用set去掉重复值，每次判断x时需判断x-1在不在序列里。
+```
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        res=1
+        set1=set(nums)
+        for x in set1:
+            if x-1 in set1:
+                continue
+            y=x+1
+            while y in set1:
+                res=max(res,y-x+1)
+                y=y+1
+        return res
+
+```
+- 49.字母异位词分组  
+给你一个字符串数组，请你将 字母异位词 组合在一起。可以按任意顺序返回结果列表。  
+示例 1:    
+输入: strs = ["eat", "tea", "tan", "ate", "nat", "bat"]  
+输出: [["bat"],["nat","tan"],["ate","eat","tea"]]  
+解释：  
+在 strs 中没有字符串可以通过重新排列来形成 "bat"。  
+字符串 "nat" 和 "tan" 是字母异位词，因为它们可以重新排列以形成彼此。  
+字符串 "ate" ，"eat" 和 "tea" 是字母异位词，因为它们可以重新排列以形成彼此。  
+>思路：用defaultdict字典表示相同字符的列表，A=''.join(sorted(str))表示元字符。
+
+```
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        res=defaultdict(list)
+        for str in strs:
+            A=''.join(sorted(str))
+            res[A].append(str)
+        return list(res.values())
+
+```
 - 295.数据流的中位数
 中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。  
 例如 arr = [2,3,4] 的中位数是 3 。  
