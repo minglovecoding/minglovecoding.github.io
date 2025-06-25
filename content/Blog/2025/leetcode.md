@@ -5,6 +5,33 @@ taxonomies:
   tags:
     - leetcode
 ---
+
+- 438.找到字符串中所有字母异味词
+给定两个字符串 s 和 p，找到 s 中所有 p 的 异位词 的子串，返回这些子串的起始索引。不考虑答案输出的顺序。  
+示例 1:  
+输入: s = "cbaebabacd", p = "abc"  
+输出: [0,6]  
+解释:  
+起始索引等于 0 的子串是 "cba", 它是 "abc" 的异位词。  
+起始索引等于 6 的子串是 "bac", 它是 "abc" 的异位词。  
+>思路：滑动窗口经典例题，双指针left、right。找异位词首先是cnt=Counter(p)计算p的字符个数。迭代s时依次减少cnt的个数。
+```
+class Solution:
+    def findAnagrams(self, s: str, p: str) -> List[int]:
+        res=[]
+        n=len(s)
+        left=0
+        cnt=Counter(p)
+        for right in range(n):
+            cnt[s[right]]-=1
+            while cnt[s[right]]<0:
+                 cnt[s[left]]+=1
+                 left+=1
+            if right-left+1==len(p):
+                res.append(left)
+        return res
+```
+
 - 42.接雨水
 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。  
 示例 1：  
@@ -1233,7 +1260,7 @@ class Solution:
         return res
 
 ```
-- 560.和为K的子数组  
+- **560.和为K的子数组**  
 给你一个整数数组 nums 和一个整数 k ，请你统计并返回 该数组中和为 k 的子数组的个数 。
 子数组是数组中元素的连续非空序列。  
 示例 1：  
@@ -1264,7 +1291,7 @@ class Solution:
 输入: s = "abcabcbb"  
 输出: 3   
 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。  
-> 思路：左右双指针，注意set用法。
+> 思路：左右双指针，注意set用法，sset.add()和sset.remove()。
 
 ```
 class Solution:
