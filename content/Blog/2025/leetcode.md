@@ -5,6 +5,31 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 42.接雨水
+给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。  
+示例 1：  
+输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]  
+输出：6  
+解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。  
+>思路：对每一个柱子判断leftmax和rightmax值大小，取最小值减去该柱子高度即为能接多少雨水，最后依次迭代每个柱子的雨水并累积。返回结果值。
+```
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        #接雨水
+        sum=0
+        n=len(height)
+        leftmax=[height[0]]+[0]*(n-1)
+        rightmax=[0]*(n-1)+[height[n-1]]
+        for i in range(1,n):
+            leftmax[i]=max(height[i],leftmax[i-1])
+        for j in range(n-2,-1,-1):
+            rightmax[j]=max(rightmax[j+1],height[j])
+        for i in range(n):
+            sum+=(min(leftmax[i],rightmax[i])-height[i])
+        return sum
+
+```
+
 - 15.三数之和
 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请你返回所有和为 0 且不重复的三元组。  
 注意：答案中不可以包含重复的三元组。  
@@ -1233,7 +1258,7 @@ class Solution:
 
 ```
 
-- 3. 无重复字符的最长子串
+- **3. 无重复字符的最长子串**  
 给定一个字符串 s ，请你找出其中不含有重复字符的 最长 子串 的长度。  
 示例 1:  
 输入: s = "abcabcbb"  
