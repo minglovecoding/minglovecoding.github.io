@@ -32,7 +32,7 @@ tags = true
 
 [languages.en]
 generate_feeds = true
-description = "Mingzhao zhou"
+description = ""
 
 [languages.en.translations]
 about = "About"
