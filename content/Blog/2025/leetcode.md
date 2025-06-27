@@ -1005,7 +1005,7 @@ class Solution:
 
 ```
 
-- 240.搜索二维矩阵II
+- **240.搜索二维矩阵II**
 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：  
 每行的元素从左到右升序排列。  
 每列的元素从上到下升序排列。  
@@ -1092,6 +1092,7 @@ class Solution:
 >第一种是用哈希表存值，再逐个遍历元素判断是否在。第二种是原地生成哈希，让每个元素回到本来应该在的位置，需注意交换时要nums[nums[i]-1],nums[i]=nums[i],nums[nums[i]-1]。最后逐个判断元素是否符合要求。
 
 ```
+#1.各回各家
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         n=len(nums)
@@ -1104,6 +1105,17 @@ class Solution:
                 return i+1
         return n+1
 
+#2.哈希表
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        n=len(nums)
+        dicc=defaultdict(int)
+        for i in range(n):
+            dicc[nums[i]]=1
+        for i in range(1,n+1):
+            if dicc[i]!=1:
+                return i
+        return n+1
 ```
 
 - 189.轮换数组
@@ -1118,6 +1130,7 @@ class Solution:
 >思路：最优做法，反转数组，先reverse(0,n-1),再reverse(0,k-1),再reverse(k,n-1)
 
 ```
+#1.利用reverse函数
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         """
@@ -1133,6 +1146,13 @@ class Solution:
         reverse(0,n-1)
         reverse(0,k-1)
         reverse(k,n-1)
+
+#2.利用数组特性
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        n=len(nums)
+        k=k%n
+        nums[0:n]=nums[n-k:n]+nums[0:n-k]
 
 ```
 
@@ -1159,7 +1179,7 @@ class Solution:
 
 ```
 
-- 53.最大子数和
+- **53.最大子数和**
 给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。  
 子数组是数组中的一个连续部分。  
 示例 1：  
@@ -1169,6 +1189,7 @@ class Solution:
 >思路：动态规划，写出状态方程，dp[i]=dp[i-1]+nums[i],因为是求最大子数组和，所以需判断dp[i-1]是否大于0，如果小于，则dp[i]=nums[i]。
 
 ```
+#1.动态方程
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         n=len(nums)
@@ -1181,10 +1202,28 @@ class Solution:
                 dp[i]=nums[i]
             res=max(res,dp[i])
         return res    
- 
+
+#2.前缀和差分，找出特例
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        res=-inf
+        minn=0
+        maxx=-inf
+        n=len(nums)
+        if n==1:
+            return nums[0]
+        dp=[0]*(n+1)
+        for i in range(n):
+            dp[i+1]=dp[i]+nums[i]
+            minn=min(minn,dp[i+1])
+            res=max(res,dp[i+1]-minn)
+        for i in range(n):
+            maxx=max(maxx,nums[i])
+        return res if maxx>0 else maxx
+
 ```
 
-- 76.最小覆盖子串
+- **76.最小覆盖子串**
 给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。  
 注意：  
 对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。  
@@ -1200,29 +1239,32 @@ class Solution:
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         res=""
-        dic=defaultdict(int)
+        n=len(s)
         left=0
-        for i,val in enumerate(t):
-            dic[val]+=1
-        n=len(dic)
-        for right,val in enumerate(s):
-            if val in t:
-                dic[val]-=1
-                if dic[val]==0:
-                    n-=1
-                while n==0: #找到子串了
-                    if not res or right-left+1<len(res):
-                        res=s[left:right+1]
-                    if s[left] in dic:
-                        dic[s[left]]+=1
-                        if dic[s[left]]>0:
-                             n+=1
-                    left+=1    
+        dicc=defaultdict(int)
+
+        for i in range(len(t)):
+            dicc[t[i]]+=1
+        n1=len(dicc)
+
+        for right,value in enumerate(s):
+            if value in t:
+                dicc[value]-=1
+                if dicc[value]==0:
+                    n1-=1
+                    while n1==0:
+                        while not res or right-left+1<len(res):
+                            res=s[left:right+1]
+                        if s[left] in t:
+                            dicc[s[left]]+=1
+                            if dicc[s[left]]>0:
+                                n1+=1
+                        left+=1
         return res
 
 ```
 
-- 239.滑动窗口最大值
+- **239.滑动窗口最大值**
 给你一个整数数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。返回滑动窗口中的最大值 。
 示例 1：  
 输入：nums = [1,3,-1,-3,5,3,6,7], k = 3  

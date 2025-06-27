@@ -54,7 +54,7 @@ paginate_by: 0
 
 ## 联系方式
 📫 Email: minglovecoding@gmail.com  
-💬 WeChat: minglovefreedom
+💬 WeChat: minglovecoding
 
 
 
