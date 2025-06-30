@@ -5,6 +5,28 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 21.合并两个有序链表
+将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。   
+示例 1：  
+输入：l1 = [1,2,4], l2 = [1,3,4]  
+输出：[1,1,2,3,4,4]  
+>思路：递归法，注意递归的顺序，if l1.val < l2.val: l1.next=self.mergeTwolist(l1.next,l2)。
+```
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        #递归做法
+        if not list1:
+            return list2
+        if not list2:
+            return list1
+        if list1.val<list2.val:
+            list1.next=self.mergeTwoLists(list1.next,list2)
+            return list1
+        else:
+            list2.next=self.mergeTwoLists(list1,list2.next)
+            return list2
+
+```
 
 - 438.找到字符串中所有字母异味词
 给定两个字符串 s 和 p，找到 s 中所有 p 的 异位词 的子串，返回这些子串的起始索引。不考虑答案输出的顺序。  
