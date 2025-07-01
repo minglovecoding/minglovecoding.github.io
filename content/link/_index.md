@@ -21,7 +21,7 @@ paginate_by: 0
 - [Emoji](https://emojihub.org/)
 - [Z-Library](https://101-e.ru/s/)
 - [NBA](https://ddkanqu.com/)
-- [Flightradar24](https://www.flightradar24.com/)
+- [Flightradar24](https://www.flightradar24.com/22.56,113.97/11)
 
 ## >>大佬的世界🧑‍💼
 
