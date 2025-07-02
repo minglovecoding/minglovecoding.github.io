@@ -5,7 +5,239 @@ taxonomies:
   tags:
     - leetcode
 ---
-- 2.两数相加
+- **路径总和III**
+给定一个二叉树的根节点 root ，和一个整数 targetSum ，求该二叉树里节点值之和等于 targetSum 的 路径 的数目。  
+路径 不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。  
+输入：root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8  
+输出：3  
+解释：和等于 8 的路径有 3 条，如图所示。  
+>思路：典型的递归题，只需考虑以root为首的和不以root为首的例子即可。
+```
+class Solution:
+    def pathSum(self, root: TreeNode, targetSum: int) -> int:
+        def rootSum(root,targetSum):
+            if not root: return 0
+            res=0
+            if root.val==targetSum:
+                res+=1
+            res+=rootSum(root.left,targetSum-root.val)
+            res+=rootSum(root.right,targetSum-root.val)
+            return res
+
+        if not root: return 0
+        res=rootSum(root,targetSum)
+        res+=self.pathSum(root.left,targetSum)
+        res+=self.pathSum(root.right,targetSum)
+        return res
+
+```
+
+- **105.从前序与中序遍历序列构造二叉树**
+给定两个整数数组 preorder 和 inorder ，其中 preorder 是二叉树的先序遍历， inorder 是同一棵树的中序遍历，请构造二叉树并返回其根节点。
+示例 1:  
+输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+输出: [3,9,20,null,null,15,7]  
+>思路：1.前序遍历的第一个node可把中序遍历分为两个part,根结点即为该node。2.用哈希表存放中序列表的坐标。
+
+```
+class Solution:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        #Inorder很关键
+        #前序遍历的第一个node可把中序遍历分为两个part,根结点即为该node
+        n=len(inorder)
+        dict={}
+        for i in range(n):
+            dict[inorder[i]]=i
+        def dfs(index,left,right):
+            if left>right: return
+            mid=dict[preorder[index]]
+            node=TreeNode(preorder[index])
+            node.left=dfs(index+1,left,mid-1)
+            node.right=dfs(index+mid-left+1,mid+1,right)
+            return node
+        return dfs(0,0,n-1)
+
+```
+
+- **108.将有序数组转换为二叉搜索树**
+给你一个整数数组 nums ，其中元素已经按 升序 排列，请你将其转换为一棵 平衡 二叉搜索树。  
+示例 1：  
+输入：nums = [-10,-3,0,5,9]  
+输出：[0,-3,9,-10,null,5]  
+解释：[0,-10,5,null,-3,null,9] 也将被视为正确答案  
+>思路:将有序数组转换为平衡二叉树。递归建树结点,并建立连接。 
+
+```
+class Solution:
+    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+        #根据数组建二叉树
+        n=len(nums)
+        def dfs(left,right):
+            if left>right:
+                return 
+            mid=(left+right)//2
+            root=TreeNode(nums[mid])
+            root.left=dfs(left,mid-1)
+            root.right=dfs(mid+1,right)
+            return root
+        return dfs(0,n-1)
+
+```
+
+- **543.二叉树的直径**
+给你一棵二叉树的根节点，返回该树的 直径 。  
+二叉树的 直径 是指树中任意两个节点之间最长路径的长度。这条路径可能经过也可能不经过根节点root。  
+两节点之间路径的 长度 由它们之间边数表示。  
+示例 1：  
+输入：root = [1,2,3,4,5]  
+输出：3  
+解释：3 ，取路径 [4,2,1,3] 或 [5,2,1,3] 的长度。  
+>思路：递归，注意用全局变量self.res表示结果。用dfs计算二叉树的深度。
+```
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        self.res=0
+        def dfs(node):
+            if not node: return 0
+            L=dfs(node.left)
+            R=dfs(node.right)
+            self.res=max(self.res,L+R)
+            return max(L,R)+1
+        dfs(root)
+        return self.res
+
+```
+
+- **94.二叉树的中序遍历**
+给定一个二叉树的根节点root,返回它的中序遍历。  
+示例 1：  
+输入：root = [1,null,2,3]  
+输出：[1,3,2]  
+>思路：1.dfs 2.栈中序遍历 3.标记法
+
+```
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res=[]
+        white,gray=0,1
+        stack=[(white,root)]
+        while stack:
+            color,node=stack.pop()
+            if not node: continue
+            if color==white:
+                stack.append((white,node.right))
+                stack.append((gray,node))
+                stack.append((white,node.left))
+            else:
+                res.append(node.val)
+        return res
+
+
+```
+
+- **148.排序链表**
+给你链表的头结点 head ，请将其按 升序 排列并返回 排序后的链表 。  
+示例 1：  
+输入：head = [4,2,1,3]  
+输出：[1,2,3,4]  
+>思路：递归+快慢指针+归并排序，需注意定义两段指针起始结点，mid,slow.next=slow.next,None。
+```
+class Solution:
+    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        pre=res=ListNode(-1)
+        #递归+快慢指针
+        if not head or not head.next: return head
+        slow,fast=head,head.next
+        while fast and fast.next:
+            slow=slow.next
+            fast=fast.next.next
+        mid,slow.next=slow.next,None
+        left,right=self.sortList(head),self.sortList(mid)
+        while left and right:
+            if left.val<right.val:
+                res.next=left
+                left=left.next
+            else:
+                res.next=right
+                right=right.next
+            res=res.next
+        res.next=left if left else right
+        return pre.next
+
+```
+- 25.K个一组翻转链表
+给你链表的头节点 head ，每 k 个节点一组进行翻转，请你返回修改后的链表。  
+k 是一个正整数，它的值小于或等于链表的长度。如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。  
+你不能只是单纯的改变节点内部的值，而是需要实际进行节点交换。  
+输入：head = [1,2,3,4,5], k = 2  
+输出：[2,1,4,3,5]  
+>思路：1.用stack先进后出的特性进行存储。2.
+
+```
+#1.用stack先进后出的特性
+class Solution:
+    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+        #用stack先进后出特性做
+        pre=res=ListNode(-1)
+        stack=[]
+        while True:
+            cnt=0
+            tmp=head
+            #将链表结点推入栈
+            while tmp and cnt!=k:
+                stack.append(tmp)
+                tmp=tmp.next
+                cnt+=1         
+            #剩余的达不到翻转链表
+            if cnt!=k:
+                res.next=head
+                break  
+            #开始翻转
+            while cnt:
+                res.next=stack.pop()
+                res=res.next
+                cnt-=1
+            #此时head是未翻转链表的头结点
+            head=tmp
+        return pre.next
+
+#2.递归法
+
+
+```
+
+- 24.两两交换链表中的节点
+给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。  
+示例 1：  
+输入：head = [1,2,3,4]  
+输出：[2,1,4,3]  
+>思路：用栈处理链表节点，需注意在移动链表节点时，需在节点入栈前移动，若在节点入栈后移动会引发错误。
+```
+class Solution:
+    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        #用栈存放链表结点
+        if not head or not head.next:
+            return head
+        res=p=ListNode(-1)
+        stack=[]
+        while head and head.next:
+            stack.append(head)
+            stack.append(head.next)
+            head=head.next.next
+            p.next=stack.pop()
+            p.next.next=stack.pop()
+            p=p.next.next
+            
+        if head:
+            p.next=head
+        else:
+            p.next=None
+        return res.next
+
+```
+- **2.两数相加**
 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。  
 请你将两个数相加，并以相同形式返回一个表示和的链表。  
 你可以假设除了数字 0 之外，这两个数都不会以 0 开头。  
