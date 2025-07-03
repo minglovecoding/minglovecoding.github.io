@@ -5,7 +5,97 @@ taxonomies:
   tags:
     - leetcode
 ---
-- **路径总和III**
+- **207.课程表**
+你这个学期必须选修 numCourses 门课程，记为 0 到 numCourses - 1 。
+在选修某些课程之前需要一些先修课程。 先修课程按数组 prerequisites 给出，其中 prerequisites[i] = [ai, bi] ，表示如果要学习课程 ai 则 必须 先学习课程  bi 。
+例如，先修课程对 [0, 1] 表示：想要学习课程 0 ，你需要先完成课程 1 。
+请你判断是否可能完成所有课程的学习？如果可以，返回 true ；否则，返回 false 。
+示例 1：
+输入：numCourses = 2, prerequisites = [[1,0]]
+输出：true
+解释：总共有 2 门课程。学习课程 1 之前，你需要完成课程 0 。这是可能的。
+>思路： 1.拓扑排序判断是否为环。2.用0，1，2表示三种状态。3.用哈希表建邻接表。4.用stack存结果
+```
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        #拓扑排序判断是否为环
+        #用0，1，2表示三种状态
+        #用哈希表建邻接表
+        #用stack存结果
+        status=[0]*numCourses
+        edges=defaultdict(list)
+        stack=[]
+        self.res=True
+        #建边 
+        for cur,pre in prerequisites:
+            edges[pre].append(cur)
+        #找环
+        def dfs(u):
+            status[u]=1
+            for v in edges[u]:
+                if self.res and status[v]==0:
+                    dfs(v)
+                elif status[v]==1:
+                    self.res=False
+            status[u]=2
+            stack.append(u)
+
+        for i in range(numCourses):
+            if self.res and status[i]==0:
+                dfs(i)
+        return self.res 
+```
+- **124.二叉树中的最大路径和**
+二叉树中的 路径 被定义为一条节点序列，序列中每对相邻节点之间都存在一条边。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不一定经过根节点。  
+路径和 是路径中各节点值的总和。  
+给你一个二叉树的根节点 root ，返回其 最大路径和 。  
+示例 1：  
+输入：root = [1,2,3]   
+输出：6  
+解释：最优路径是 2 -> 1 -> 3 ，路径和为 2 + 1 + 3 = 6  
+>思路：用递归的方法,left计算左子树的值，right计算右子树的值，遍历每个结点，返回最大的self.res。
+```
+class Solution:
+    def maxPathSum(self, root: Optional[TreeNode]) -> int:
+        self.res=-inf
+        def dfs(root):
+            if not root: return 0
+            left=max(dfs(root.left),0)
+            right=max(dfs(root.right),0)
+            self.res=max(self.res,root.val+left+right)
+            return root.val+max(left,right)
+        dfs(root)
+        return self.res
+
+
+```
+
+- **236.二叉树的最近公共祖先**
+给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。  
+百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”  
+示例 1：  
+输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1  
+输出：3  
+解释：节点 5 和节点 1 的最近公共祖先是节点 3。  
+>思路：1.递归判断p、q是否在左右子结点。2.如果p、q分布在左右子树,则公共结点是root,如果左结点没有，则返回右子树递归，如果右结点没有，则返回左子树递归。
+
+```
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+
+        if not root or root==p or root==q:
+            return root
+        left=self.lowestCommonAncestor(root.left,p,q)
+        right=self.lowestCommonAncestor(root.right,p,q)
+        if not left:
+            return right
+        if not right:
+            return left
+        return root
+
+```
+
+- **437.路径总和III**
 给定一个二叉树的根节点 root ，和一个整数 targetSum ，求该二叉树里节点值之和等于 targetSum 的 路径 的数目。  
 路径 不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。  
 输入：root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8  
