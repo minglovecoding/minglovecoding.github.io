@@ -5,6 +5,48 @@ taxonomies:
   tags:
     - leetcode
 ---
+
+
+- **78.子集**
+给你一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。  
+解集 不能 包含重复的子集。你可以按 任意顺序 返回解集。  
+示例 1：  
+输入：nums = [1,2,3]  
+输出：[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]  
+>思路：深搜，用index表示坐标，用tmp表示结果。
+```
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        res=[]
+        n=len(nums)
+        def dfs(index,tmp):
+            res.append(tmp)
+            for i in range(index,n):
+                dfs(i+1,tmp+[nums[i]])
+        dfs(0,[])
+        return res
+
+```
+- **46.全排列**  
+给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。  
+示例 1：  
+输入：nums = [1,2,3]    
+输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]  
+>思路：用nums和tmp,if nums为空，说明数取完了。
+```
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        res=[]
+        def dfs(nums,tmp):
+            if not nums: 
+                res.append(tmp)
+            for i in range(len(nums)):
+                dfs(nums[:i]+nums[i+1:],tmp+[nums[i]])
+        dfs(nums,[])
+        return res
+
+```
+
 - **207.课程表**
 你这个学期必须选修 numCourses 门课程，记为 0 到 numCourses - 1 。
 在选修某些课程之前需要一些先修课程。 先修课程按数组 prerequisites 给出，其中 prerequisites[i] = [ai, bi] ，表示如果要学习课程 ai 则 必须 先学习课程  bi 。

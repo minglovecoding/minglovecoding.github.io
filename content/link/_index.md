@@ -9,7 +9,7 @@ paginate_by: 0
 - 朱元璋正传 ✅
 - 信念-雷殿生 ✅
 - 小米创业思考-雷军 ✅
-- 一往无前 
+- 一往无前 ✅
 
 ## >>Movie🎬
 - 阿甘正传
@@ -24,7 +24,6 @@ paginate_by: 0
 - [Flightradar24](https://www.flightradar24.com/22.56,113.97/11)
 
 ## >>大佬的世界🧑‍💼
-
 - [Wang Guo](https://wangguo.site/)
 - [Liu Jiacai](https://liujiacai.net/)
 - [Tianxing Cheng](https://tianxingchen.github.io/)
