@@ -23,6 +23,7 @@ paginate_by: 0
 - [NBA](https://ddkanqu.com/)
 - [Flightradar24](https://www.flightradar24.com/22.56,113.97/11)
 - [PNG压缩](https://www.iloveimg.com/zh-cn/compress-image/compress-png)
+- [JPG转PNG](https://jpg2png.com/zh/)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
