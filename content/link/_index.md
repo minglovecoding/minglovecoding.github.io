@@ -22,6 +22,7 @@ paginate_by: 0
 - [Z-Library](https://101-e.ru/s/)
 - [NBA](https://ddkanqu.com/)
 - [Flightradar24](https://www.flightradar24.com/22.56,113.97/11)
+- [PNG压缩](https://www.iloveimg.com/zh-cn/compress-image/compress-png)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
