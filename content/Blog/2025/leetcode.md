@@ -6,6 +6,60 @@ taxonomies:
     - leetcode
 ---
 
+- 34.在排序数组中查找元素的第一个和最后一个位置
+给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。  
+如果数组中不存在目标值 target，返回 [-1, -1]。  
+你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。  
+示例 1：  
+输入：nums = [5,7,7,8,8,10], target = 8  
+输出：[3,4]  
+>思路：用二分查找寻找某个值的首次出现时间，最后一个位置用low_bound(nums,target+1)-1表示。需要提前处理好找不到的情况。
+
+```
+class Solution:
+    def find_first(self,nums,target):
+        left,right=0,len(nums)-1
+        while(left<=right):
+            mid=(left+right)//2
+            if target<=nums[mid]:
+                right=mid-1
+            else:
+                left=mid+1
+        return left
+
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        #二分查找
+        start=self.find_first(nums,target)
+        if start==len(nums) or nums[start]!=target:
+            return [-1,-1]
+        end=self.find_first(nums,target+1)-1
+        return [start,end]
+
+```
+
+- 35.搜索插入位置
+给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。  
+请必须使用时间复杂度为 O(log n) 的算法。  
+示例 1:  
+输入: nums = [1,3,5,6], target = 5  
+输出: 2  
+
+> 思路：二分查找最好使用`while(left<=right)`进行判断，最后返回left值。
+
+```
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        #二分查找
+        def find_index(left,right,target):
+            while left<=right:
+                mid=(left+right)//2
+                if nums[mid]<target:
+                    left=mid+1
+                else:
+                    right=mid-1
+            return left
+        return find_index(0,len(nums)-1,target)
+```
 - **39.组合总和**
 给你一个 无重复元素 的整数数组 candidates 和一个目标整数 target ，找出 candidates 中可以使数字和为目标数 target 的 所有 不同组合 ，并以列表形式返回。你可以按 任意顺序 返回这些组合。  
 candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。   
@@ -714,37 +768,6 @@ class Solution:
                 else:
                     right=mid-1
         return -1
-
-```
-
-- 34.在排序数组中查找元素的第一个和最后一个位置
-给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。  
-如果数组中不存在目标值 target，返回 [-1, -1]。  
-你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。  
-示例 1：  
-输入：nums = [5,7,7,8,8,10], target = 8  
-输出：[3,4]  
->思路：用二分查找寻找某个值的首次出现时间，最后一个位置用low_bound(nums,target+1)-1表示。需要提前处理好找不到的情况。
-
-```
-class Solution:
-    def find_first(self,nums,target):
-        left,right=0,len(nums)-1
-        while(left<=right):
-            mid=(left+right)//2
-            if target<=nums[mid]:
-                right=mid-1
-            else:
-                left=mid+1
-        return left
-
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
-        #二分查找
-        start=self.find_first(nums,target)
-        if start==len(nums) or nums[start]!=target:
-            return [-1,-1]
-        end=self.find_first(nums,target+1)-1
-        return [start,end]
 
 ```
 
