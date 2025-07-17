@@ -676,7 +676,7 @@ class Solution:
 
 ```
 
-- 51.N皇后
+- **51.N皇后**
 按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。  
 n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。  
 给你一个整数 n ，返回所有不同的 n 皇后问题 的解决方案。  
@@ -689,26 +689,28 @@ n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，�
 ```
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
-        #用diag1存正对角线
-        #用diag2存负对角线
-        #用col存纵轴
-        #用queens=[0]*n 存皇后 
-        #用res表示结果
+        #n表示表盘有多大
+        #res输出表示输出结果 
+        #用mark=[0]*n可以对表进行标记
+        #思路：放置的棋子不能有同行同列或正斜负斜，处理正斜是x+y，负斜是x-y
+        #正斜1+3 2+2 3+1 diag1[x+y]=1
+        #负斜2-1 3-2 4-3 diag2[x-y]=1
+        #用col=[False]*n对纵轴进行标记
+        #用深搜的思路 从dfs(0)开始遍历横轴开始 当遍历到n即停止 输出结果res
         res=[]
         mark=[0]*n
         col=[False]*n
-        diag1=[False]*(2*n-1)
-        diag2=[False]*(2*n-1)
+        diag1=[False]*(2*n-1) #x+y
+        diag2=[False]*(2*n-1) #x-y
         def dfs(row):
             if row==n:
-                res.append(['.'*c+'Q'+'.'*(n-1-c)for c in mark])
-                return 
-            for index,yes in enumerate(col):
-                if not yes and not diag1[row+index] and not diag2[row-index]:
+                res.append(['.'*c+'Q'+'.'*(n-c-1) for c in mark])
+            for index,tag in enumerate(col):
+                if not tag and not diag1[row+index] and not diag2[row-index+(n-1)]:
                     mark[row]=index
-                    col[index]=diag1[row+index]=diag2[row-index]=True
+                    col[index]=diag1[row+index]=diag2[row-index+(n-1)]=True
                     dfs(row+1)
-                    col[index]=diag1[row+index]=diag2[row-index]=False
+                    col[index]=diag1[row+index]=diag2[row-index+(n-1)]=False
         dfs(0)
         return res
 
