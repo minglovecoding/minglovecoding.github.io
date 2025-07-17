@@ -6,6 +6,78 @@ taxonomies:
     - leetcode
 ---
 
+- **39.组合总和**
+给你一个 无重复元素 的整数数组 candidates 和一个目标整数 target ，找出 candidates 中可以使数字和为目标数 target 的 所有 不同组合 ，并以列表形式返回。你可以按 任意顺序 返回这些组合。  
+candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。   
+对于给定的输入，保证和为 target 的不同组合数少于 150 个。  
+示例 1：  
+输入：candidates = [2,3,6,7], target = 7  
+输出：[[2,2,3],[7]]  
+解释：  
+2 和 3 可以形成一组候选，2 + 2 + 3 = 7 。注意 2 可以使用多次。  
+7 也是一个候选， 7 = 7 。  
+仅有这两种组合。  
+>思路：1.将candidate进行排序。2.dfs遍历时target表示目标数，当candidates[j]>target,break退出。3.path[:]表示路径所有值。4.返回结果dfs(0,target)
+```
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        #为了预防重复 需先sort
+        candidates.sort()
+        res=list()
+        ans=list()
+        n=len(candidates)
+        def dfs(index,target):
+            if target==0:
+                res.append(ans[:])
+            else:
+                for index1 in range(index,n):
+                    if candidates[index1]>target:
+                        break
+                    ans.append(candidates[index1])
+                    dfs(index1,target-candidates[index1])
+                    ans.pop()
+        dfs(0,target)
+        return res
+
+```
+
+- 17.电话号码的字母组合
+给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。答案可以按 任意顺序 返回。  
+给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。  
+示例 1：  
+输入：digits = "23"  
+输出：["ad","ae","af","bd","be","bf","cd","ce","cf"]  
+>思路:深搜递归，用map映射电话号码。从0开始遍历到len(digits),返回结果res。
+
+```
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return []
+        res=list()
+        _str=list()
+        _map={
+            "2":"abc",
+            "3":"def",
+            "4":"ghi",
+            "5":"jkl",
+            "6":"mno",
+            "7":"pqrs",
+            "8":"tuv",
+            "9":"wxyz"
+        }
+        def dfs(index):
+            if index==len(digits):
+                res.append(''.join(_str))
+            else:
+                _str1=digits[index]
+                for _str2 in _map[_str1]:
+                    _str.append(_str2)
+                    dfs(index+1)
+                    _str.pop()
+        dfs(0)
+        return res
+```
 
 - **78.子集**
 给你一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。  
@@ -716,7 +788,7 @@ class Solution:
 
 ```
 
-- 131.分割回文串
+- **131.分割回文串**
 给你一个字符串 s，请你将 s 分割成一些 子串，使每个子串都是 回文串 。返回 s 所有可能的分割方案。  
 示例 1：  
 输入：s = "aab"  
@@ -743,7 +815,7 @@ class Solution:
         return res
 ```
 
-- 79.单词搜索
+- **79.单词搜索**
 给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。  
 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。  
 示例 1：  
@@ -759,29 +831,33 @@ class Solution:
 ```
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
-        #可能在任一一点dfs。
-        #dfs需设置三个参数，x,y坐标和数组k值。 
-        #dfs时有上下左右四个方向。
-        #设置边界 继续递归。
-        #当visit时需标记，访问完需恢复标记。
-        m,n=len(board),len(board[0])
-        def dfs(x,y,z):
-            if board[x][y]!=word[z]:
-                return False
-            if z==len(word)-1:
-                return True
-            board[x][y]=""
-            for i,j in (x+1,y),(x-1,y),(x,y+1),(x,y-1):
-                if 0<=i<m and 0<=j<n:
-                    if dfs(i,j,z+1):
-                        return True
-            board[x][y]=word[z]
-            return False
+        #深搜从0到len(word)
+        m=len(board)
+        n=len(board[0])
+        #找到起点可以上下左右移动，经过的点进行标记，用dfs(i+1,j)
+        #遍历表盘所有单元格
+        def dfs(i,j,k):
+            if not 0<=i<m or not 0<=j<n or not word[k]==board[i][j]: return False
+            if k==len(word)-1: return True
+            board[i][j]=""
+            res=dfs(i+1,j,k+1) or dfs(i,j+1,k+1) or dfs(i-1,j,k+1) or dfs(i,j-1,k+1)
+            board[i][j]=word[k]
+            return res
+        
+        first,last=0,0
+        #优化 选第一个或最后一个最小的数开始找
+        for i in range(m):
+            for j in range(n):
+                if board[i][j]==word[0]:
+                    first+=1
+                elif board[i][j]==word[-1]:
+                    last+=1
+        if last<first:
+            word=word[::-1]
 
         for i in range(m):
             for j in range(n):
-                if dfs(i,j,0):
-                    return True
+                if dfs(i,j,0): return True
         return False
 
 ```
@@ -823,24 +899,21 @@ candidates 中的 同一个 数字可以 无限制重复被选取 。如果至�
 ```
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        #将candidates排序
-        #dfs遍历时用target表示目标值 当candidates[i]>target时 break。
-        #path添加值 path[:]表示路径里所有值
-        #结果是dfs(0,target)
-        n=len(candidates)
-        path=[]
-        res=[]
+        #为了预防重复 需先sort
         candidates.sort()
+        res=list()
+        ans=list()
+        n=len(candidates)
         def dfs(index,target):
             if target==0:
-                res.append(path[:])
-                return 
-            for j in range(index,n):
-                if candidates[j]>target:
-                    break
-                path.append(candidates[j])
-                dfs(j,target-candidates[j])
-                path.pop()
+                res.append(ans[:])
+            else:
+                for index1 in range(index,n):
+                    if candidates[index1]>target:
+                        break
+                    ans.append(candidates[index1])
+                    dfs(index1,target-candidates[index1])
+                    ans.pop()
         dfs(0,target)
         return res
 
