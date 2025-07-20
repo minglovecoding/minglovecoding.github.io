@@ -5,7 +5,46 @@ taxonomies:
   tags:
     - leetcode
 ---
+- **4.寻找两个正序数组的中位数**
+给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。  
+算法的时间复杂度应该为 O(log (m+n)) 。  
+示例 1：  
+输入：nums1 = [1,3], nums2 = [2]
+输出：2.00000
+解释：合并数组 = [1,2,3] ，中位数 2
+>思路: 二分查找，如果m+n是奇数,即查找第(m+n+1)//2的数，否则返回(m+n)//2+(m+n)//2+1的平均数，查找方法主要是比较两个数组第k//2-1值的大小,依次去除k值。
 
+```
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        def getK(k):#k是第k大的值
+            start1,start2=0,0
+            while True:
+                if start1==m:
+                    return nums2[start2+k-1]
+                if start2==n:
+                    return nums1[start1+k-1]
+                if k==1:
+                    return min(nums1[start1],nums2[start2])
+                _start1=min(m-1,start1+k//2-1)    
+                _start2=min(n-1,start2+k//2-1)
+                pivot1=nums1[_start1]
+                pivot2=nums2[_start2]
+                if pivot1<=pivot2:
+                    k-=_start1-start1+1
+                    start1=_start1+1
+                else:
+                    k-=_start2-start2+1
+                    start2=_start2+1
+                
+        m,n=len(nums1),len(nums2)
+        total=m+n
+        if total%2==1:
+            return getK((total+1)//2)
+        else:
+            return (getK(total//2)+getK(total//2+1))/2.0
+
+```
 - 34.在排序数组中查找元素的第一个和最后一个位置
 给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。  
 如果数组中不存在目标值 target，返回 [-1, -1]。  
