@@ -5,6 +5,133 @@ taxonomies:
   tags:
     - leetcode
 ---
+
+- **295.数据流的中位数**
+中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。  
+例如 arr = [2,3,4] 的中位数是 3 。  
+例如 arr = [2,3] 的中位数是 (2 + 3) / 2 = 2.5 。  
+实现 MedianFinder 类:  
+MedianFinder() 初始化 MedianFinder 对象。  
+void addNum(int num) 将数据流中的整数 num 添加到数据结构中。  
+double findMedian() 返回到目前为止所有元素的中位数。与实际答案相差 10-5 以内的答案将被接受。  
+示例 1：  
+输入  
+["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]  
+[[], [1], [2], [], [3], []]   
+输出  
+[null, null, null, 1.5, null, 2.0]  
+解释  
+MedianFinder medianFinder = new MedianFinder();  
+medianFinder.addNum(1);    // arr = [1]  
+medianFinder.addNum(2);    // arr = [1, 2]  
+medianFinder.findMedian(); // 返回 1.5 ((1 + 2) / 2)  
+medianFinder.addNum(3);    // arr[1, 2, 3]  
+medianFinder.findMedian(); // return 2.0  
+>思路：1.左边是最大堆 2.右边是最小堆 3.分割线一分为二 4.如果左堆大于右堆 直接返回max_stack[0],否则返回两个堆顶元素平均值
+```
+class MedianFinder:
+    def __init__(self):
+        self.maxx=[] #左大堆
+        self.minn=[] #右小堆
+        
+    def addNum(self, num: int) -> None:
+        if len(self.maxx)==len(self.minn):
+            heappush(self.maxx,-heappushpop(self.minn,num))
+        else:
+            heappush(self.minn,-heappushpop(self.maxx,-num))
+        
+    def findMedian(self) -> float:
+        if len(self.maxx)>len(self.minn):
+            return -self.maxx[0]
+        else:
+            return (self.minn[0]-self.maxx[0])/2
+```
+
+- 347.前k个高频元素
+给你一个整数数组 nums 和一个整数 k ，请你返回其中出现频率前 k 高的元素。你可以按 任意顺序 返回答案。  
+示例 1:  
+输入: nums = [1,1,1,2,2,3], k = 2  
+输出: [1,2]  
+>思路：用Counter计算nums的计算个数，找出cnt.values()的最大值，即为buckets大小的边界。将出现次数相同的元素加入桶中，倒叙添加到res里，如果res个数等于k，返回即为res。
+
+```
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        #先Count nums里面的元素出现次数
+        #找出出现次数最大的值即为桶的大小
+        #将值放到桶里
+        #倒序将res加入桶
+        cnt=Counter(nums)
+        maxx=max(cnt.values())
+        res=[]
+        buckets=[[] for _ in range(maxx+1)]
+        for value,count in cnt.items():
+            buckets[count].append(value)
+        for bucket in reversed(buckets):
+            res+=bucket
+            if len(res)==k:
+                return res
+
+```
+
+- 215.数组中的第K个最大元素
+给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。  
+请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。  
+你必须设计并实现时间复杂度为 O(n) 的算法解决此问题。  
+示例 1:  
+输入: [3,2,1,5,6,4], k = 2  
+输出: 5  
+>思路:大顶堆,先建堆,再删除k-1个，最后返回max_heap[0]。
+
+```
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        #大顶堆
+        max_heap=[]
+        for val in nums:
+            heapq.heappush(max_heap,-val)
+        for i in range(k-1):
+            heapq.heappop(max_heap)
+        return -max_heap[0]
+
+```
+
+- 84.柱状图中最大的矩形
+给定 n 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。  
+求在该柱状图中，能够勾勒出来的矩形的最大面积。  
+输入：heights = [2,1,5,6,2,3]  
+输出：10  
+解释：最大的矩形为图中红色区域，面积为10 
+>思路：左右单调栈，左栈默认边界为-1，右栈默认边界为n。计算每个index的最大边界面积，返回最大的面积。
+
+```
+
+```
+
+- 739.每日温度
+给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指对于第 i 天，下一个更高温度出现在几天后。如果气温在这之后都不会升高，请在该位置用 0 来代替。  
+示例 1:  
+输入: temperatures = [73,74,75,71,69,72,76,73]
+输出: [1,1,4,2,1,1,0,0]
+>思路： 单调栈从右向左遍历。如果cursor值大于或等于栈最后一个，将该值弹出。否则，res即为栈最后一个坐标减去当前坐标。
+
+```
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        #从右向左 单调栈越来越小
+        stack=[]
+        n=len(temperatures)
+        res=[0]*n
+        for i in range(n-1,-1,-1):
+            while stack and temperatures[i]>=temperatures[stack[-1]]:
+                stack.pop()
+            if stack:
+                res[i]=stack[-1]-i
+            stack.append(i)
+        return res
+
+```
+
 - **4.寻找两个正序数组的中位数**
 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。  
 算法的时间复杂度应该为 O(log (m+n)) 。  
@@ -713,46 +840,7 @@ class Solution:
         return list(res.values())
 
 ```
-- 295.数据流的中位数
-中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。  
-例如 arr = [2,3,4] 的中位数是 3 。  
-例如 arr = [2,3] 的中位数是 (2 + 3) / 2 = 2.5 。  
-实现 MedianFinder 类:  
-MedianFinder() 初始化 MedianFinder 对象。  
-void addNum(int num) 将数据流中的整数 num 添加到数据结构中。  
-double findMedian() 返回到目前为止所有元素的中位数。与实际答案相差 10-5 以内的答案将被接受。  
-示例 1：  
-输入  
-["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]  
-[[], [1], [2], [], [3], []]   
-输出  
-[null, null, null, 1.5, null, 2.0]  
-解释  
-MedianFinder medianFinder = new MedianFinder();  
-medianFinder.addNum(1);    // arr = [1]  
-medianFinder.addNum(2);    // arr = [1, 2]  
-medianFinder.findMedian(); // 返回 1.5 ((1 + 2) / 2)  
-medianFinder.addNum(3);    // arr[1, 2, 3]  
-medianFinder.findMedian(); // return 2.0  
->思路：1.左边是最大堆 2.右边是最小堆 3.分割线一分为二 4.如果左堆大于右堆 直接返回max_stack[0],否则返回两个堆顶元素平均值
-```
-class MedianFinder:
-    def __init__(self):
-        self.maxx=[] #左大堆
-        self.minn=[] #右小堆
-        
-    def addNum(self, num: int) -> None:
-        if len(self.maxx)==len(self.minn):
-            heappush(self.maxx,-heappushpop(self.minn,num))
-        else:
-            heappush(self.minn,-heappushpop(self.maxx,-num))
-        
-    def findMedian(self) -> float:
-        if len(self.maxx)>len(self.minn):
-            return -self.maxx[0]
-        else:
-            return (self.minn[0]-self.maxx[0])/2
-```
+
 
 - 153.寻找旋转排序数组中的最小值
 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,2,4,5,6,7] 在变化后可能得到：  
