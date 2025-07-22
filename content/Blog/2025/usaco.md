@@ -1,5 +1,5 @@
 ---
-title: usaco刷题笔记
+title: USACO刷题笔记
 date: 2025-07-21  20:19:00 
 taxonomies:
   tags:

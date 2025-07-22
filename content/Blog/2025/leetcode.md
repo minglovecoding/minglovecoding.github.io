@@ -5,6 +5,71 @@ taxonomies:
   tags:
     - leetcode
 ---
+- 287.寻找重复数
+给定一个包含 n + 1 个整数的数组 nums ，其数字都在 [1, n] 范围内（包括 1 和 n），可知至少存在一个重复的整数。  
+假设 nums 只有 一个重复的整数 ，返回 这个重复的数 。  
+你设计的解决方案必须 不修改 数组 nums 且只用常量级 O(1) 的额外空间。  
+示例 1：  
+输入：nums = [1,3,4,2,2]  
+输出：2  
+>思路：该题神似环形链表II,用快慢指针方法解决。在快慢指针第一次相遇后，用新指针从0开始走，新指针与慢指针重新开始走，当他们相遇时，新指针的值即是重复数。
+、、、
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        slow,fast=0,0
+        while True:
+            slow,fast=nums[slow],nums[nums[fast]]
+            if slow==fast:
+                break
+        ptr=0
+        while ptr!=slow:
+            slow,ptr=nums[slow],nums[ptr]
+        return ptr
+、、、
+- 31.下一个排列
+整数数组的一个 排列  就是将其所有成员以序列或线性顺序排列。  
+例如，arr = [1,2,3] ，以下这些都可以视作 arr 的排列：[1,2,3]、[1,3,2]、[3,1,2]、[2,3,1]。  
+示例 1：  
+输入：nums = [1,2,3]  
+输出：[1,3,2]  
+>思路：1.找出num[i]< nums[i+1]。2.在右边找出j满足nums[i]< nums[j]。3.交换，并将(i+1，n)数进行调换。
+
+```
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
+        left=len(nums)-2
+        while left>=0 and nums[left]>=nums[left+1]:
+            left-=1
+        if left>=0:
+            right=len(nums)-1
+            while right>=0 and nums[left]>=nums[right]:
+                right-=1
+            nums[left],nums[right]=nums[right],nums[left]
+        
+        left,right=left+1,len(nums)-1
+        while left<right:
+            nums[left],nums[right]=nums[right],nums[left]
+            left+=1
+            right-=1
+```
+
+- 136.只出现一次的数字
+给你一个 非空 整数数组 nums ，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。  
+你必须设计并实现线性时间复杂度的算法来解决此问题，且该算法只使用常量额外空间。  
+示例 1 ：  
+输入：nums = [2,2,1]  
+输出：1  
+>思路：异或操作，所有出现两次的数字异或时都会为,把所有数字都进行异或操作，最后只留下出现一次的元素。
+
+```
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        res=0
+        for num in nums:
+            res^=num
+        return res
+
+```
 
 - **295.数据流的中位数**
 中位数是有序整数列表中的中间值。如果列表的大小是偶数，则没有中间值，中位数是两个中间值的平均值。  
@@ -1408,7 +1473,7 @@ class Solution:
 
 ```
 
-- 45.跳跃游戏II
+- **45.跳跃游戏II**
 给定一个长度为 n 的 0 索引整数数组 nums。初始位置为 nums[0]。  
 每个元素 nums[i] 表示从索引 i 向后跳转的最大长度。换句话说，如果你在 nums[i] 处，你可以跳转到任意 nums[i + j] 处:  
 0 <= j <= nums[i]   
