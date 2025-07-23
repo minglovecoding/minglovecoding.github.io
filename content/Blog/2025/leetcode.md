@@ -5,6 +5,33 @@ taxonomies:
   tags:
     - leetcode
 ---
+
+- 198.打家劫舍
+你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。  
+给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。  
+示例 1：  
+输入：[1,2,3,1]  
+输出：4  
+解释：偷窃 1 号房屋 (金额 = 1) ，然后偷窃 3 号房屋 (金额 = 3)。  
+     偷窃到的最高金额 = 1 + 3 = 4 。  
+>思路:最经典的动规，把状态方程写出来。dp[i]=max(dp[i-2]+nums[i],dp[i-1])。考虑状态方程时只需要考虑当前的情况是由什么决定。
+
+```
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        dp=[0]*len(nums)
+        if len(nums)==1:
+            return nums[0]
+        elif len(nums)==2:
+            return max(nums[0],nums[1])
+        dp[0]=nums[0]
+        dp[1]=max(nums[0],nums[1])
+        for i in range(2,len(nums)):
+            dp[i]=max(dp[i-2]+nums[i],dp[i-1])
+        return dp[len(nums)-1]
+
+```
+
 - 287.寻找重复数
 给定一个包含 n + 1 个整数的数组 nums ，其数字都在 [1, n] 范围内（包括 1 和 n），可知至少存在一个重复的整数。  
 假设 nums 只有 一个重复的整数 ，返回 这个重复的数 。  
@@ -1402,21 +1429,24 @@ class Solution:
 ```
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
+        #f[0][0]=0
         n=len(coins)
+        coins.sort()
         f=[[inf]*(amount+1) for _ in range(n+1)]
         f[0][0]=0
-        for i,j in enumerate(coins):
-            for value in range(amount+1):
-                if value<j:
-                    f[i+1][value]=f[i][value]
+
+        for i in range(1,len(coins)+1):
+            for j in range(amount+1):
+                if coins[i-1]>j:
+                    f[i][j]=f[i-1][j]
                 else:
-                    f[i+1][value]=min(f[i][value],f[i+1][value-j]+1)
-        ans=f[n][amount]
-        return ans if ans<inf else -1
+                    f[i][j]=min(f[i-1][j],f[i][j-coins[i-1]]+1)
+        return f[n][amount] if f[n][amount]<inf else -1
+
 
 ```
 
-- 279.完全平方数
+- **279.完全平方数**
 给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。  
 完全平方数 是一个整数，其值等于另一个整数的平方；换句话说，其值等于一个整数自乘的积。例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是。  
 示例 1：  
