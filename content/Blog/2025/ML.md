@@ -6,7 +6,7 @@ taxonomies:
     - Machine learning
 ---
 [ML入门](https://www.bilibili.com/video/BV1nt411r7tj?spm_id_from=333.788.videopod.episodes&vd_source=1161690079eded438f62622c2b6c537f&p=9)
-## 机器学习概述##
+## 机器学习概述
 1. 机器学习、深度学习能做什么。
 - 传统预测
 - 图像识别
@@ -47,7 +47,7 @@ theano->tensorflow
 - pip install -U scikit-learn
 - python -c "import sklearn; sklearn.show_versions()"
 
-## 特征工程##
+## 特征工程
 sklearn 特征工程
 pandas 数据清洗
 特征提取：将任意数据转换为可用于机器学习的数字特征
@@ -88,5 +88,5 @@ if __name__=="__main__":
     datasets_demo()
     #字典特征抽取
     dict_demo()
-    
+
 ```
