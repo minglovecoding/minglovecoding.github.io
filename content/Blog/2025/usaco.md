@@ -32,7 +32,7 @@ for _ in range(T):
     print(diff(N))
 
 ```
-## 2.Farmer John's Cheese Block ##
+## 2.Farmer John's Cheese Block 
 - 三个轴面xy,xz,yz,一个`1*1*N`块能塞进原奶酪，说明原奶酪以任一个轴面为底的空间都被切完。所以可以初始化三个轴面为底的值为N，每切一个奶酪就把三个轴面底值-1。每切一次，累积轴面底为0的个数。最多的可能为3*N。
 
 ```
@@ -59,5 +59,40 @@ for _ in range(Q):
     x,y,z=map(int,input().split())
     cb.carve(x,y,z)
     print(cb.res())
-    
+
+```
+## 3. It's Mooin' Time 
+- 修改每一个字符为26个字母,
+用哈希表累积s[i:i+3]的数量,
+当累计数>=F,将其加入到set里,
+输出set个数以及set里的value值#修改每一个字符为26个字母,
+用哈希表累积s[i:i+3]的数量,
+当累计数>=F,将其加入到set里,
+输出set个数以及set里的value值,
+
+```
+from collections import defaultdict
+
+N,F=map(int,input().split())
+S=input()
+moos=set() #防止moo重复
+
+def find_moos(s):
+    cnt=defaultdict(int)
+    for i in range(0,N-2):
+        if s[i]!=s[i+1] and s[i+1]==s[i+2]:
+            cnt[s[i:i+3]]+=1
+            if cnt[s[i:i+3]]>=F:
+                moos.add(s[i:i+3])
+
+#遍历修改后的S
+for i in range(N):
+    for j in range(26):
+        _S=S[:i]+chr(j+ord('a'))+S[i+1:]
+        find_moos(_S)
+moos=sorted(moos)
+print(len(moos))
+for moo in moos:
+    print(moo)
+
 ```
