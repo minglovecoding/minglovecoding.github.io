@@ -90,3 +90,7 @@ if __name__=="__main__":
     dict_demo()
 
 ```
+## Tf-idf文本特征提取
+在某一类别文章出现次数很多，而在其他类别文章出现很少。
+TF - 词频（term frequency，tf）
+IDF - 逆向文档频率

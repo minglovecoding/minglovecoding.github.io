@@ -96,3 +96,58 @@ for moo in moos:
     print(moo)
 
 ```
+
+> 2024-2025 January bronze
+## 1.Astral Superposition
+- 1.注意生成原map时要用`map1=[[0 for _ in range(N)] for _ in range(N)]`
+- 2.处理原字符需将字符转化为数字
+- 3.先处理map2为2的
+- 4.再处理map2为1的
+```
+#将字符特征化
+WGB={
+    'W':0,
+    'G':1,
+    'B':2,
+}
+
+def _case():
+    N,A,B=[int(x) for x in input().split()]
+    #str to num
+    map2=[[WGB[x] for x in input()] for _ in range(N)]
+    #res is map1
+    map1=[[0 for _ in range(N)] for _ in range(N)]
+    #先处理map2的bold
+    for i in range(N):
+        for j in range(N):
+            if map2[i][j]==2:
+                map1[i][j]=1
+                if i<B or j<A:
+                    print(-1)
+                    return
+                if map2[i-B][j-A]==0:
+                    print(-1)
+                    return
+                map1[i-B][j-A]=1
+    #再处理map1的gray
+    for i in range(N):
+        for j in range(N):
+            if map2[i][j]==1:
+                if map1[i][j]==1:
+                    continue
+                if i<B or j<A:
+                    map1[i][j]=1
+                    continue
+                if map1[i-B][j-A]==1:
+                    continue
+                map1[i][j]=1
+    print(sum(sum(x) for x in map1))
+    #print(map1)
+    #return res
+
+T=int(input())
+while T:
+    T-=1
+    _case()
+
+```
