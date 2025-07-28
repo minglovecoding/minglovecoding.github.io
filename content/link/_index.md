@@ -29,3 +29,4 @@ paginate_by: 0
 - [Wang Guo](https://wangguo.site/)
 - [Liu Jiacai](https://liujiacai.net/)
 - [Tianxing Cheng](https://tianxingchen.github.io/)
+- [Stefan Dascalescu](https://stefdasca.ro/)
