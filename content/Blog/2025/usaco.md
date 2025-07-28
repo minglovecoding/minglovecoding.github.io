@@ -177,3 +177,43 @@ for i in range(N):
 print(ans)
 
 ```
+
+## 3.Cow Checkups
+- 逐个遍历index向外拓展
+```
+def main():
+    import sys
+    input = sys.stdin.read
+    data = input().split()
+
+    n = int(data[0])
+    A = list(map(int, data[1:n+1]))
+    B = list(map(int, data[n+1:2*n+1]))
+
+    already_same = sum(1 for i in range(n) if A[i] == B[i])
+
+    ans = [0] * (n + 1)
+
+    def expand(l, r):
+        nonlocal already_same
+        match = already_same
+        while l >= 0 and r < n:
+            # 减去之前的匹配值
+            match -= (A[l] == B[l]) + (A[r] == B[r])
+            # 加上交换后的匹配值
+            match += (A[l] == B[r]) + (A[r] == B[l])
+            ans[match] += 1
+            l -= 1
+            r += 1
+
+    for mid in range(n):
+        expand(mid, mid)      # 奇数长度的中心扩展
+        expand(mid, mid + 1)  # 偶数长度的中心扩展
+
+    for count in ans:
+        print(count)
+
+if __name__ == "__main__":
+    main()
+
+```
