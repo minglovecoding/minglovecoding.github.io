@@ -46,7 +46,8 @@ paginate_by: 0
 
 ## 工作经历
 - 2013.07 - 2023.12：🚗 BYD  技术项目管理
-- 2024.11 - 现在：🔥保密
+- 2024.11 - 2025.7：🔥 被社会毒打
+- 2025.7 - 至今： 🏢 深圳霖擎科技有限公司
 
 ## 其他经历
 - 2024.02 - 2024.8：🚴‍♀️[从深圳骑行去法国巴黎](https://www.bilibili.com/video/BV1dpsjebE2d/?share_source=copy_web&vd_source=543b94802d84e6e76a193e0c7e9a4540)  
