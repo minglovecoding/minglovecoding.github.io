@@ -25,7 +25,7 @@ paginate_by: 0
 - [Flightradar24](https://www.flightradar24.com/22.56,113.97/11)
 - [PNG压缩](https://www.iloveimg.com/zh-cn/compress-image/compress-png)
 - [JPG转PNG](https://jpg2png.com/zh/)
-- [Warmshower](https://warmshowersblog.org/)
+- [Warmshower](https://www.warmshowers.org/)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
