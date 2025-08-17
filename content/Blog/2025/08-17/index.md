@@ -6,4 +6,4 @@ taxonomies:
     - 随笔
 ---
 
-[123](/templates/sf_la_pch_bike_map.html)
+[sf-la](/templates/sf_la_pch_bike_map.html)
