@@ -6,4 +6,4 @@ taxonomies:
     - 随笔
 ---
 
-[San Francisco-Los Angeles](/templates/sf_la_pch_bike_map.html)
+[SF-LA](/templates/sf_la_pch_bike_map.html)
