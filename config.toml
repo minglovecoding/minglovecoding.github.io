@@ -1,6 +1,6 @@
 # config.toml 示例
 title = "Mingo"
-base_url = "https://minglovecoding.github.io"
+base_url = "https://minglovecoding.github.io/"
 
 compile_sass = true
 ignored_content = ["README.md"]
