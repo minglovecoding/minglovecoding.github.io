@@ -6,4 +6,5 @@ taxonomies:
     - 随笔
 ---
 
+从San Francisco-Los Angeles的路线
 [sf-la](/templates/sf_la_pch_bike_map.html)
