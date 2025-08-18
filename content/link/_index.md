@@ -26,6 +26,7 @@ paginate_by: 0
 - [PNG压缩](https://www.iloveimg.com/zh-cn/compress-image/compress-png)
 - [JPG转PNG](https://jpg2png.com/zh/)
 - [Warmshower](https://www.warmshowers.org/)
+- [Travelmap](https://minglovecoding.travelmap.net)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
