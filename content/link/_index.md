@@ -28,7 +28,7 @@ paginate_by: 0
 - [JPG转PNG](https://jpg2png.com/zh/)
 - [Warmshower](https://www.warmshowers.org/)
 - [Travelmap](https://minglovecoding.travelmap.net)
-- [cobalt](https://cobalt.tools/)
+- [Cobalt](https://cobalt.tools/)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
