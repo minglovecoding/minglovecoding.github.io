@@ -11,6 +11,7 @@ paginate_by: 0
 - 小米创业思考-雷军 ✅
 - 一往无前 ✅
 - 认知觉醒 ✅
+- 马斯克自传
 
 ## >>Movie🎬
 - 阿甘正传
@@ -27,6 +28,7 @@ paginate_by: 0
 - [JPG转PNG](https://jpg2png.com/zh/)
 - [Warmshower](https://www.warmshowers.org/)
 - [Travelmap](https://minglovecoding.travelmap.net)
+- [cobalt](https://cobalt.tools/)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
