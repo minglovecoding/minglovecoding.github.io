@@ -6,4 +6,7 @@ taxonomies:
     - 随笔
 ---
 
-<img src="1.png" alt="MONEY1" width="300" height="200"><img src="2.png" alt="MONEY2" width="300" height="200">
+<p align="center">
+  <img src="1.png" alt="图1" width="200"/>
+  <img src="2.png" alt="图2" width="200"/>
+</p>
