@@ -54,8 +54,8 @@ paginate_by: 0
 ![Cycling to Paris](./image.png)
 
 ## 联系方式
-📫 Email: minglovecoding@gmail.com  
-💬 WeChat: minglovecoding
+📫 Email: minglovecoding@gmail.com
+🧑🏻‍💻 whatsapp: +86 18169340466
 
 
 
