@@ -18,5 +18,9 @@ taxonomies:
 
 ![cancel](2.png)
 
+> 10月9日，顺利拿下10年美签。
+
+![visa](8.png)
+
 
 
