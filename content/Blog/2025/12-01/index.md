@@ -7,7 +7,9 @@ taxonomies:
 ---
 > 2个月应该可以干到。
 
-![Paris-London](1.png)
-![Southampton-NY](2.png)
-![NY-LA](3.png)
+<p align="center">
+  <img src="1.png" alt="Paris-London" width="500"/>
+  <img src="2.png" alt="Southampton-NY" width="500"/>
+  <img src="3.png" alt="NY-LA" width="500"/>
+</p>
 
