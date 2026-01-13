@@ -32,7 +32,7 @@ tags = true
 
 [languages.en]
 generate_feeds = true
-description = "Do not go gentle into that good night"
+description = "Peace and love"
 
 [languages.en.translations]
 about = "About"
