@@ -34,6 +34,7 @@ paginate_by: 0
 - [Nas](https://fd62-7052-d5b1-2942-cdf9-1f1d-a190-bd15.scf.direct.ug.link:9443/desktop/?os=ugospro#/)
 - [Hupu](https://hupu.us/)
 - [Youtube-download](https://youtube.iiilab.com/)
+- [Big-convert](https://en.bigconverter.com/youtube-to-mp3-243/)
 
 ## >>大佬的世界🧑‍💼
 - [Wang Guo](https://wangguo.site/)
