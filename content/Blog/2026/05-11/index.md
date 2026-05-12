@@ -16,22 +16,53 @@ taxonomies:
 
 ##   一、个人经历
 <p align="center">
-  <img src="1.jpg" alt="大一本科" width="500"/>
-  <img src="2.jpg" alt="CTF" width="500"/>
-  <img src="3.jpg" alt="ACM" width="500"/>
-  <img src="4.jpg" alt="考研" width="500"/>
-  <img src="5.jpg" alt="图书馆借阅报告" width="500"/>
-  <img src="6.jpg" alt="深大上岸" width="500"/>
-  <img src="7.jpeg" alt="学术成果" width="500"/>
-  <img src="8.jpg" alt="BYD" width="500"/>
-  <img src="9.jpeg" alt="Paris" width="500"/>
-  <img src="10.jpeg" alt="留学" width="500"/>
-  <img src="11.jpeg" alt="旧金山" width="500"/>
-  <img src="12.jpeg" alt="UCLA" width="500"/>
-  <img src="13.jpeg" alt="纽约" width="500"/>
-  <img src="14.jpeg" alt="联合国" width="500"/>
-  <img src="15.jpeg" alt="白宫" width="500"/>
-  <img src="16.jpg" alt="今天的课堂" width="500"/>
+  <img src="1.jpg" alt="大一本科" width="500"/><br>
+  大一本科<br><br>
+
+  <img src="2.jpg" alt="CTF" width="500"/><br>
+  CTF<br><br>
+
+  <img src="3.jpg" alt="ACM" width="500"/><br>
+  ACM<br><br>
+
+  <img src="4.jpg" alt="考研" width="500"/><br>
+  考研<br><br>
+
+  <img src="5.jpg" alt="图书馆借阅报告" width="500"/><br>
+  图书馆借阅报告<br><br>
+
+  <img src="6.jpg" alt="深大上岸" width="500"/><br>
+  深大上岸<br><br>
+
+  <img src="7.jpeg" alt="学术成果" width="500"/><br>
+  学术成果<br><br>
+
+  <img src="8.jpg" alt="BYD" width="500"/><br>
+  BYD<br><br>
+
+  <img src="9.jpeg" alt="Paris" width="500"/><br>
+  Paris<br><br>
+
+  <img src="10.jpeg" alt="留学" width="500"/><br>
+  留学<br><br>
+
+  <img src="11.jpeg" alt="旧金山" width="500"/><br>
+  旧金山<br><br>
+
+  <img src="12.jpeg" alt="UCLA" width="500"/><br>
+  UCLA<br><br>
+
+  <img src="13.jpeg" alt="纽约" width="500"/><br>
+  纽约<br><br>
+
+  <img src="14.jpeg" alt="联合国" width="500"/><br>
+  联合国<br><br>
+
+  <img src="15.jpeg" alt="白宫" width="500"/><br>
+  白宫<br><br>
+
+  <img src="16.jpg" alt="今天的课堂" width="500"/><br>
+  今天的课堂
 </p>
 
 ***
