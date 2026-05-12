@@ -100,6 +100,10 @@ taxonomies:
 
 <p align="center">NBA现场</p>
 
+<img src="23.jpg" alt="黄石邂逅siri博士" width="500"/>
+
+<p align="center">黄石邂逅Siri博士（现在的女朋友）</p>
+
 <img src="16.jpg" alt="今天的课堂" width="500"/>
 
 <p align="center">今天的UCLA课堂</p>
