@@ -108,6 +108,10 @@ taxonomies:
 
 <p align="center">留学机构工位</p>
 
+<img src="34.jpeg" alt="低谷期结交的忘年交汉哥" width="500"/>
+
+<p align="center">低谷期结交的忘年交汉哥</p>
+
 <img src="11.jpeg" alt="旧金山" width="500"/>
 
 <p align="center">旧金山</p>
