@@ -44,9 +44,37 @@ taxonomies:
 
 <p align="center">深大上岸</p>
 
+<img src="26.jpg" alt="和齐鲁工大的最后一面" width="500"/>
+
+<p align="center">和齐鲁工大的最后一面</p>
+
+<img src="28.jpg" alt="暑假教NOIP赚读研生活费" width="500"/>
+
+<p align="center">暑假教NOIP赚读研生活费</p>
+
+<img src="29.jpg" alt="选导师被明老师看上" width="500"/>
+
+<p align="center">选导师被明老师看上</p>
+
+<img src="27.jpg" alt="研究生录取" width="500"/>
+
+<p align="center">研究生录取</p>
+
+<img src="30.jpg" alt="我❤️SZ" width="500"/>
+
+<p align="center">我❤️SZ</p>
+
+<img src="31.jpg" alt="最喜欢的深大场景" width="500"/>
+
+<p align="center">最喜欢的深大场景</p>
+
 <img src="19.jpg" alt="留学机构上USACO" width="500"/>
 
 <p align="center">给国际学生上USACO</p>
+
+<img src="32.jpg" alt="骑行318" width="500"/>
+
+<p align="center">骑行318</p>
 
 <img src="20.jpg" alt="深信服实习" width="500"/>
 
