@@ -20,17 +20,17 @@ taxonomies:
 
 <p align="center">大一化学实验</p>
 
-<img src="2.jpg" alt="CTF" width="500"/>
+<img src="2.jpg" alt="2017年参加CTF" width="500"/>
 
-<p align="center">CTF</p>
+<p align="center">2017年参加CTF</p>
 
 <img src="3.jpg" alt="ACM" width="500"/>
 
-<p align="center">ACM</p>
+<p align="center">2018年参加ACM</p>
 
-<img src="4.jpg" alt="考研" width="500"/>
+<img src="4.jpg" alt="2019年考研" width="500"/>
 
-<p align="center">考研</p>
+<p align="center">2019年考研</p>
 
 <img src="5.jpg" alt="图书馆借阅报告" width="500"/>
 
