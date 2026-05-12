@@ -56,7 +56,7 @@ taxonomies:
 
 <p align="center">读研学术成果</p>
 
-<img src="24.jpg" alt="硕士毕业" width="500"/>
+<img src="24.jpeg" alt="硕士毕业" width="500"/>
 
 <p align="center">硕士毕业</p>
 
