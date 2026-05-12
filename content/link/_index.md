@@ -20,6 +20,8 @@ paginate_by: 0
 - 拯救大兵瑞恩
 - Into the Wild
 - 星际穿越
+- Before the Sunrise
+- Gone with the wind
 
 ## >>一些有意思的网站🌐
 - [Emoji](https://emojihub.org/)
