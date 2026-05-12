@@ -92,6 +92,10 @@ taxonomies:
 
 <p align="center">硅谷计算机博物馆</p>
 
+<img src="21.jpg" alt="NBA" width="500"/>
+
+<p align="center">NBA现场</p>
+
 <img src="16.jpg" alt="今天的课堂" width="500"/>
 
 <p align="center">今天的UCLA课堂</p>
