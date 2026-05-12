@@ -74,7 +74,7 @@ taxonomies:
 
 <img src="15.jpeg" alt="国会" width="500"/>
 
-<p align="center">国会</p>
+<p align="center">美国国会</p>
 
 <img src="16.jpg" alt="今天的课堂" width="500"/>
 
