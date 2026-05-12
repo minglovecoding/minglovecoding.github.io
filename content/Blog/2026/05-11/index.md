@@ -60,6 +60,10 @@ taxonomies:
 
 <p align="center">Cycling to Paris</p>
 
+<img src="22.jpg" alt="深圳特区报" width="500"/>
+
+<p align="center">深圳特区报报道</p>
+
 <img src="10.jpeg" alt="留学机构工位" width="500"/>
 
 <p align="center">留学机构工位</p>
