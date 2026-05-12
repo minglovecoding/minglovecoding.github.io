@@ -36,6 +36,10 @@ taxonomies:
 
 <p align="center">图书馆借阅报告</p>
 
+<img src="25.jpg" alt="本科毕业" width="500"/>
+
+<p align="center">本科毕业</p>
+
 <img src="6.jpg" alt="深大上岸" width="500"/>
 
 <p align="center">深大上岸</p>
@@ -51,6 +55,10 @@ taxonomies:
 <img src="7.jpeg" alt="学术成果" width="500"/>
 
 <p align="center">读研学术成果</p>
+
+<img src="24.jpg" alt="硕士毕业" width="500"/>
+
+<p align="center">硕士毕业</p>
 
 <img src="8.jpg" alt="校招BYD" width="500"/>
 
