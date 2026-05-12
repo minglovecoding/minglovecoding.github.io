@@ -16,9 +16,9 @@ taxonomies:
 
 ##   一、个人经历
 <p align="center">
-<img src="1.jpg" alt="大一本科" width="500"/>
+<img src="1.jpg" alt="大一化学实验" width="500"/>
 
-<p align="center">大一本科</p>
+<p align="center">大一化学实验</p>
 
 <img src="2.jpg" alt="CTF" width="500"/>
 
@@ -44,17 +44,17 @@ taxonomies:
 
 <p align="center">学术成果</p>
 
-<img src="8.jpg" alt="BYD" width="500"/>
+<img src="8.jpg" alt="校招BYD" width="500"/>
 
-<p align="center">BYD</p>
+<p align="center">校招BYD</p>
 
-<img src="9.jpeg" alt="Paris" width="500"/>
+<img src="9.jpeg" alt="Cycling to Paris" width="500"/>
 
-<p align="center">Paris</p>
+<p align="center">Cycling to Paris</p>
 
-<img src="10.jpeg" alt="留学" width="500"/>
+<img src="10.jpeg" alt="留学机构工位" width="500"/>
 
-<p align="center">留学</p>
+<p align="center">留学机构工位</p>
 
 <img src="11.jpeg" alt="旧金山" width="500"/>
 
@@ -72,9 +72,9 @@ taxonomies:
 
 <p align="center">联合国</p>
 
-<img src="15.jpeg" alt="白宫" width="500"/>
+<img src="15.jpeg" alt="国会" width="500"/>
 
-<p align="center">白宫</p>
+<p align="center">国会</p>
 
 <img src="16.jpg" alt="今天的课堂" width="500"/>
 
