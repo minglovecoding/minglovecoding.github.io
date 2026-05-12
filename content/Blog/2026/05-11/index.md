@@ -36,7 +36,7 @@ taxonomies:
 
 <p align="center">图书馆借阅报告</p>
 
-<img src="25.jpg" alt="本科毕业" width="500"/>
+<img src="25.png" alt="本科毕业" width="500"/>
 
 <p align="center">本科毕业</p>
 
