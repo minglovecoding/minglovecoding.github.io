@@ -72,17 +72,17 @@ taxonomies:
 
 <p align="center">给国际学生上USACO</p>
 
-<img src="32.jpg" alt="骑行318" width="500"/>
+<img src="20.jpg" alt="深信服实习" width="500"/>
 
 <p align="center">深信服实习</p>
 
-<img src="7.jpeg" alt="学术成果" width="500"/>
+<img src="32.jpg" alt="骑行318" width="500"/>
 
 <p align="center">骑行318</p>
 
-<img src="20.jpg" alt="深信服实习" width="500"/>
+<img src="7.jpeg" alt="学术成果" width="500"/>
 
-<p align="center">读研学术成果</p>
+<p align="center">学术成果</p>
 
 <img src="33.jpg" alt="论文答辩" width="500"/>
 
