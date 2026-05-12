@@ -12,89 +12,26 @@ taxonomies:
 
 这篇文章第一部分会分享一些个人过去的经历照片，第二部分则主要聊一聊关于平台、机遇、视野、选择等方面的一些经验和思考。
 
-因为战术层面的内容，已经有不少优秀的同学分享过了，所以这一次，我更想和大家聊聊一些偏“战略层面”的内容。
+因为战术层面的内容，已经有不少优秀的同学分享过了，所以这一次我更想和大家聊一些战略层面的内容。
 
 ##   一、个人经历
 <p align="center">
-<figure>
   <img src="1.jpg" alt="大一本科" width="500"/>
-  <figcaption>大一本科</figcaption>
-</figure>
-
-<figure>
   <img src="2.jpg" alt="CTF" width="500"/>
-  <figcaption>CTF</figcaption>
-</figure>
-
-<figure>
   <img src="3.jpg" alt="ACM" width="500"/>
-  <figcaption>ACM</figcaption>
-</figure>
-
-<figure>
   <img src="4.jpg" alt="考研" width="500"/>
-  <figcaption>考研</figcaption>
-</figure>
-
-<figure>
   <img src="5.jpg" alt="图书馆借阅报告" width="500"/>
-  <figcaption>图书馆借阅报告</figcaption>
-</figure>
-
-<figure>
   <img src="6.jpg" alt="深大上岸" width="500"/>
-  <figcaption>深大上岸</figcaption>
-</figure>
-
-<figure>
   <img src="7.jpeg" alt="学术成果" width="500"/>
-  <figcaption>学术成果</figcaption>
-</figure>
-
-<figure>
-  <img src="8.heic" alt="BYD" width="500"/>
-  <figcaption>BYD</figcaption>
-</figure>
-
-<figure>
+  <img src="8.jpg" alt="BYD" width="500"/>
   <img src="9.jpeg" alt="Paris" width="500"/>
-  <figcaption>Paris</figcaption>
-</figure>
-
-<figure>
   <img src="10.jpeg" alt="留学" width="500"/>
-  <figcaption>留学</figcaption>
-</figure>
-
-<figure>
   <img src="11.jpeg" alt="旧金山" width="500"/>
-  <figcaption>旧金山</figcaption>
-</figure>
-
-<figure>
   <img src="12.jpeg" alt="UCLA" width="500"/>
-  <figcaption>UCLA</figcaption>
-</figure>
-
-<figure>
   <img src="13.jpeg" alt="纽约" width="500"/>
-  <figcaption>纽约</figcaption>
-</figure>
-
-<figure>
   <img src="14.jpeg" alt="联合国" width="500"/>
-  <figcaption>联合国</figcaption>
-</figure>
-
-<figure>
   <img src="15.jpeg" alt="白宫" width="500"/>
-  <figcaption>白宫</figcaption>
-</figure>
-
-<figure>
   <img src="16.jpg" alt="今天的课堂" width="500"/>
-  <figcaption>今天的课堂</figcaption>
-</figure>
 </p>
 
 ***
