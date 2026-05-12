@@ -1,5 +1,5 @@
 ---
-title: No complaints, just do it.
+title: No complaints, Just do it.
 date: 2026-05-11  17:08:00
 taxonomies:
   tags:
@@ -42,11 +42,11 @@ taxonomies:
 
 <img src="7.jpeg" alt="学术成果" width="500"/>
 
-<p align="center">学术成果</p>
+<p align="center">读研学术成果</p>
 
 <img src="8.jpg" alt="校招BYD" width="500"/>
 
-<p align="center">校招BYD</p>
+<p align="center">校招入职BYD</p>
 
 <img src="9.jpeg" alt="Cycling to Paris" width="500"/>
 
