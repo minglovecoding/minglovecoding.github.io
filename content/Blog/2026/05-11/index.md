@@ -52,15 +52,15 @@ taxonomies:
 
 <p align="center">暑假教NOIP赚读研生活费</p>
 
+<img src="27.jpg" alt="研究生通知书" width="500"/>
+
+<p align="center">研究生通知书</p>
+
 <img src="29.jpg" alt="选导师被明老师看上" width="500"/>
-
-<p align="center">即将读研</p>
-
-<img src="30.jpg" alt="我❤️SZ" width="500"/>
 
 <p align="center">选导师被明老师看上</p>
 
-<img src="27.jpg" alt="研究生录取" width="500"/>
+<img src="30.jpg" alt="我❤️SZ" width="500"/>
 
 <p align="center">我❤️SZ</p>
 
