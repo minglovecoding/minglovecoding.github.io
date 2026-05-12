@@ -40,6 +40,14 @@ taxonomies:
 
 <p align="center">深大上岸</p>
 
+<img src="19.jpg" alt="留学机构上USACO" width="500"/>
+
+<p align="center">给国际学生上USACO</p>
+
+<img src="20.jpg" alt="深信服实习" width="500"/>
+
+<p align="center">深信服实习</p>
+
 <img src="7.jpeg" alt="学术成果" width="500"/>
 
 <p align="center">读研学术成果</p>
