@@ -110,7 +110,7 @@ taxonomies:
 
 <img src="34.jpeg" alt="低谷期结交的忘年交汉哥" width="500"/>
 
-<p align="center">低谷期忘年交汉哥(以前是大学教授)</p>
+<p align="center">低谷期忘年交汉哥(职称大学教授)</p>
 
 <img src="11.jpeg" alt="旧金山" width="500"/>
 
