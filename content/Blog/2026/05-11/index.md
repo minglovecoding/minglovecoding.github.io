@@ -54,13 +54,13 @@ taxonomies:
 
 <img src="29.jpg" alt="选导师被明老师看上" width="500"/>
 
+<p align="center">即将读研</p>
+
+<img src="30.jpg" alt="我❤️SZ" width="500"/>
+
 <p align="center">选导师被明老师看上</p>
 
 <img src="27.jpg" alt="研究生录取" width="500"/>
-
-<p align="center">研究生录取</p>
-
-<img src="30.jpg" alt="我❤️SZ" width="500"/>
 
 <p align="center">我❤️SZ</p>
 
@@ -74,15 +74,19 @@ taxonomies:
 
 <img src="32.jpg" alt="骑行318" width="500"/>
 
-<p align="center">骑行318</p>
-
-<img src="20.jpg" alt="深信服实习" width="500"/>
-
 <p align="center">深信服实习</p>
 
 <img src="7.jpeg" alt="学术成果" width="500"/>
 
+<p align="center">骑行318</p>
+
+<img src="20.jpg" alt="深信服实习" width="500"/>
+
 <p align="center">读研学术成果</p>
+
+<img src="33.jpg" alt="论文答辩" width="500"/>
+
+<p align="center">论文答辩</p>
 
 <img src="24.jpeg" alt="硕士毕业" width="500"/>
 
