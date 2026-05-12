@@ -76,6 +76,14 @@ taxonomies:
 
 <p align="center">美国国会</p>
 
+<img src="18.jpg" alt="NASA博物馆" width="500"/>
+
+<p align="center">NASA博物馆</p>
+
+<img src="17.jpg" alt="硅谷计算机博物馆" width="500"/>
+
+<p align="center">硅谷计算机博物馆</p>
+
 <img src="16.jpg" alt="今天的课堂" width="500"/>
 
 <p align="center">今天的UCLA课堂</p>
