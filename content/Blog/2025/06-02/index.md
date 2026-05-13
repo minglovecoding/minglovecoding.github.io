@@ -6,6 +6,8 @@ taxonomies:
     - 情感
 ---
 
+<!--
+
 # 初识
 - 与小陈是在大理遇见的,1月份的大理气候宜人，只是晚上有点冷。
 
@@ -39,3 +41,6 @@ taxonomies:
 ***
 
 # 分手
+
+git add . && git commit -m "update" && git push && gh workflow run main.yml
+-->
