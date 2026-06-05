@@ -32,7 +32,7 @@ tags = true
 
 [languages.en]
 generate_feeds = true
-description = "Peace and love"
+description = "life is an experience"
 
 [languages.en.translations]
 about = "About"
